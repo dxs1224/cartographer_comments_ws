@@ -1,0 +1,1009 @@
+[
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer_pbstream.dir/cartographer/io/pbstream_main.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/pbstream_main.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/pbstream_main.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer_print_configuration.dir/cartographer/common/print_configuration_main.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/print_configuration_main.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/print_configuration_main.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer_compute_relations_metrics.dir/cartographer/ground_truth/compute_relations_metrics_main.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/compute_relations_metrics_main.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/compute_relations_metrics_main.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer_autogenerate_ground_truth.dir/cartographer/ground_truth/autogenerate_ground_truth_main.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth_main.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth_main.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/configuration_file_resolver.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/configuration_file_resolver.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/configuration_file_resolver.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/fixed_ratio_sampler.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/fixed_ratio_sampler.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/fixed_ratio_sampler.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/histogram.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/histogram.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/histogram.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/internal/ceres_solver_options.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/internal/ceres_solver_options.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/internal/ceres_solver_options.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/internal/testing/thread_pool_for_testing.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/internal/testing/thread_pool_for_testing.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/lua_parameter_dictionary.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/lua_parameter_dictionary.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/lua_parameter_dictionary.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/task.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/task.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/task.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/thread_pool.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/thread_pool.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/thread_pool.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/time.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/time.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/common/time.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/ground_truth/autogenerate_ground_truth.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/autogenerate_ground_truth.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/ground_truth/relations_text_file.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/relations_text_file.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/ground_truth/relations_text_file.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/color.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/color.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/color.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/coloring_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/coloring_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/coloring_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/counting_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/counting_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/counting_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/draw_trajectories.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/draw_trajectories.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/draw_trajectories.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/file_writer.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/file_writer.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/file_writer.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/fixed_ratio_sampling_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/fixed_ratio_sampling_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/fixed_ratio_sampling_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/frame_id_filtering_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/frame_id_filtering_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/frame_id_filtering_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/hybrid_grid_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/hybrid_grid_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/hybrid_grid_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/image.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/image.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/image.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/intensity_to_color_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/intensity_to_color_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/intensity_to_color_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/internal/in_memory_proto_stream.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/in_memory_proto_stream.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/in_memory_proto_stream.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/internal/mapping_state_serialization.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/mapping_state_serialization.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/mapping_state_serialization.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_info.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/pbstream_info.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/pbstream_info.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/internal/pbstream_migrate.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/pbstream_migrate.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/internal/pbstream_migrate.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/min_max_range_filtering_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/min_max_range_filtering_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/min_max_range_filtering_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/outlier_removing_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/outlier_removing_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/outlier_removing_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/pcd_writing_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/pcd_writing_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/pcd_writing_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/ply_writing_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/ply_writing_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/ply_writing_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/points_batch.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/points_batch.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/points_batch.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/points_processor_pipeline_builder.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/points_processor_pipeline_builder.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/points_processor_pipeline_builder.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/probability_grid_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/probability_grid_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/probability_grid_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/proto_stream.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/proto_stream.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/proto_stream.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/proto_stream_deserializer.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/proto_stream_deserializer.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/proto_stream_deserializer.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/serialization_format_migration.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/serialization_format_migration.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/serialization_format_migration.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/submap_painter.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/submap_painter.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/submap_painter.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/vertical_range_filtering_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/vertical_range_filtering_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/vertical_range_filtering_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/xray_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/xray_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/xray_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/io/xyz_writing_points_processor.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/xyz_writing_points_processor.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/io/xyz_writing_points_processor.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/2d/grid_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/grid_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/grid_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/2d/probability_grid.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/probability_grid.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/probability_grid.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/2d/probability_grid_range_data_inserter_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/probability_grid_range_data_inserter_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/probability_grid_range_data_inserter_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/2d/submap_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/submap_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/2d/submap_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/3d/range_data_inserter_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/3d/range_data_inserter_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/3d/range_data_inserter_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/3d/submap_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/3d/submap_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/3d/submap_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/detect_floors.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/detect_floors.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/detect_floors.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/imu_tracker.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/imu_tracker.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/imu_tracker.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/local_slam_result_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_slam_result_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_slam_result_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/local_trajectory_builder_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_trajectory_builder_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_trajectory_builder_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/local_trajectory_builder_options_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_trajectory_builder_options_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/local_trajectory_builder_options_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/normal_estimation_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/normal_estimation_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/normal_estimation_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/overlapping_submaps_trimmer_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/overlapping_submaps_trimmer_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/overlapping_submaps_trimmer_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/pose_graph_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/pose_graph_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/pose_graph_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/ray_to_pixel_mask.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/ray_to_pixel_mask.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/ray_to_pixel_mask.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/ceres_scan_matcher_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/ceres_scan_matcher_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/ceres_scan_matcher_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/correlative_scan_matcher_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/correlative_scan_matcher_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/correlative_scan_matcher_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/fast_correlative_scan_matcher_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/fast_correlative_scan_matcher_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/fast_correlative_scan_matcher_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/occupied_space_cost_function_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/occupied_space_cost_function_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/occupied_space_cost_function_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/real_time_correlative_scan_matcher_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/real_time_correlative_scan_matcher_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/real_time_correlative_scan_matcher_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/scan_matching/tsdf_match_cost_function_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/tsdf_match_cost_function_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/scan_matching/tsdf_match_cost_function_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/tsd_value_converter.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsd_value_converter.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsd_value_converter.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/tsdf_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsdf_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsdf_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/2d/tsdf_range_data_inserter_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsdf_range_data_inserter_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/2d/tsdf_range_data_inserter_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/local_slam_result_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_slam_result_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_slam_result_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/local_trajectory_builder_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_trajectory_builder_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_trajectory_builder_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/local_trajectory_builder_options_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_trajectory_builder_options_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/local_trajectory_builder_options_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/pose_graph_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/pose_graph_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/pose_graph_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/ceres_scan_matcher_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/ceres_scan_matcher_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/ceres_scan_matcher_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/fast_correlative_scan_matcher_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/fast_correlative_scan_matcher_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/fast_correlative_scan_matcher_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/intensity_cost_function_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/intensity_cost_function_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/intensity_cost_function_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/low_resolution_matcher.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/low_resolution_matcher.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/low_resolution_matcher.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/precomputation_grid_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/precomputation_grid_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/precomputation_grid_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/real_time_correlative_scan_matcher_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/real_time_correlative_scan_matcher_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/real_time_correlative_scan_matcher_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/3d/scan_matching/rotational_scan_matcher.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/rotational_scan_matcher.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/3d/scan_matching/rotational_scan_matcher.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/collated_trajectory_builder.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/collated_trajectory_builder.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/collated_trajectory_builder.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/connected_components.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/connected_components.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/connected_components.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/constraints/constraint_builder.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/constraints/constraint_builder_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/constraints/constraint_builder_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/constraints/constraint_builder_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/eigen_quaterniond_from_two_vectors.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/eigen_quaterniond_from_two_vectors.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/eigen_quaterniond_from_two_vectors.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/global_trajectory_builder.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/global_trajectory_builder.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/global_trajectory_builder.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/imu_based_pose_extrapolator.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/imu_based_pose_extrapolator.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/imu_based_pose_extrapolator.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/motion_filter.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/motion_filter.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/motion_filter.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/optimization/ceres_pose.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/ceres_pose.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/ceres_pose.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/optimization/cost_functions/spa_cost_function_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/cost_functions/spa_cost_function_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/cost_functions/spa_cost_function_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/optimization/optimization_problem_2d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_2d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_2d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/optimization/optimization_problem_3d.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_3d.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_3d.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/optimization/optimization_problem_options.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_options.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/optimization/optimization_problem_options.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/range_data_collator.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/range_data_collator.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/range_data_collator.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/scan_matching/real_time_correlative_scan_matcher.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/scan_matching/real_time_correlative_scan_matcher.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/scan_matching/real_time_correlative_scan_matcher.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/submap_controller.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/submap_controller.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/submap_controller.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/internal/trajectory_connectivity_state.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/trajectory_connectivity_state.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/internal/trajectory_connectivity_state.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/map_builder.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/map_builder.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/map_builder.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/map_builder_interface.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/map_builder_interface.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/map_builder_interface.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/pose_extrapolator.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_extrapolator.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_extrapolator.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/pose_extrapolator_interface.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_extrapolator_interface.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_extrapolator_interface.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/pose_graph.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_graph.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_graph.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/pose_graph_trimmer.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_graph_trimmer.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/pose_graph_trimmer.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/probability_values.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/probability_values.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/probability_values.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/range_data_inserter_interface.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/range_data_inserter_interface.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/range_data_inserter_interface.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/trajectory_builder_interface.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/trajectory_builder_interface.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/trajectory_builder_interface.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/trajectory_node.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/trajectory_node.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/trajectory_node.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/value_conversion_tables.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/value_conversion_tables.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/mapping/value_conversion_tables.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/metrics/counter.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/counter.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/counter.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/metrics/gauge.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/gauge.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/gauge.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/metrics/histogram.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/histogram.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/histogram.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/metrics/register.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/register.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/metrics/register.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/compressed_point_cloud.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/compressed_point_cloud.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/compressed_point_cloud.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/fixed_frame_pose_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/fixed_frame_pose_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/fixed_frame_pose_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/imu_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/imu_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/imu_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/internal/collator.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/collator.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/collator.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/internal/ordered_multi_queue.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/ordered_multi_queue.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/ordered_multi_queue.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/internal/trajectory_collator.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/trajectory_collator.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/trajectory_collator.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/internal/voxel_filter.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/voxel_filter.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/internal/voxel_filter.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/landmark_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/landmark_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/landmark_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/odometry_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/odometry_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/odometry_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/point_cloud.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/point_cloud.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/point_cloud.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/range_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/range_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/range_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/timed_point_cloud_data.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/timed_point_cloud_data.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/sensor/timed_point_cloud_data.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/rigid_transform.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/rigid_transform.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/rigid_transform.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/timestamped_transform.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/timestamped_transform.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/timestamped_transform.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/transform.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/transform.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/transform.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/transform_interpolation_buffer.cc.o -c /home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/transform_interpolation_buffer.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer/cartographer/transform/transform_interpolation_buffer.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/common/proto/ceres_solver_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/common/proto/ceres_solver_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/common/proto/ceres_solver_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/ground_truth/proto/relations.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/ground_truth/proto/relations.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/ground_truth/proto/relations.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/cell_limits_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/cell_limits_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/cell_limits_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/connected_components.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/connected_components.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/connected_components.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/grid_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/grid_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/grid_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/grid_2d_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/grid_2d_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/grid_2d_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/hybrid_grid.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/hybrid_grid.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/hybrid_grid.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/local_trajectory_builder_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/local_trajectory_builder_options_3d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/map_builder_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/map_builder_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/map_builder_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/map_limits.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/map_limits.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/map_limits.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/motion_filter_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/motion_filter_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/motion_filter_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/normal_estimation_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/normal_estimation_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/normal_estimation_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/pose_extrapolator_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_extrapolator_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_extrapolator_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/pose_graph.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/pose_graph/constraint_builder_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph/constraint_builder_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph/constraint_builder_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/pose_graph/optimization_problem_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph/optimization_problem_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph/optimization_problem_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/pose_graph_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/pose_graph_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/probability_grid.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/probability_grid.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/probability_grid.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/probability_grid_range_data_inserter_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/range_data_inserter_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/range_data_inserter_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/range_data_inserter_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/range_data_inserter_options_3d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/range_data_inserter_options_3d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/range_data_inserter_options_3d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/ceres_scan_matcher_options_3d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_3d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_3d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/fast_correlative_scan_matcher_options_3d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/scan_matching/real_time_correlative_scan_matcher_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/serialization.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/serialization.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/serialization.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/submap.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submap.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submap.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/submap_visualization.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submap_visualization.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submap_visualization.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/submaps_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submaps_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submaps_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/submaps_options_3d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submaps_options_3d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/submaps_options_3d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/trajectory.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/trajectory_builder_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory_builder_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory_builder_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/trajectory_node_data.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory_node_data.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/trajectory_node_data.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/tsdf_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/tsdf_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/tsdf_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/mapping/proto/tsdf_range_data_inserter_options_2d.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/sensor/proto/adaptive_voxel_filter_options.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/sensor/proto/sensor.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/sensor/proto/sensor.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/sensor/proto/sensor.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/proto/timestamped_transform.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/transform/proto/timestamped_transform.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/transform/proto/timestamped_transform.pb.cc"
+},
+
+{
+  "directory": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -DBOOST_IOSTREAMS_DYN_LINK -DGFLAGS_IS_A_DLL=0 -D__CLANG_SUPPORT_DYN_ANNOTATION__ -I. -I/home/dxs/cartographer_detailed_comments_ws/src/cartographer -isystem /usr/include/eigen3 -isystem /usr/include/lua5.2  -O3 -DNDEBUG    -pthread -fPIC  -Wall -Wpedantic -Werror=format-security -Werror=missing-braces -Werror=reorder -Werror=return-type -Werror=switch -Werror=uninitialized -O3 -DNDEBUG -o CMakeFiles/cartographer.dir/cartographer/transform/proto/transform.pb.cc.o -c /home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/transform/proto/transform.pb.cc",
+  "file": "/home/dxs/cartographer_detailed_comments_ws/build_isolated/cartographer/install/cartographer/transform/proto/transform.pb.cc"
+}
+]
