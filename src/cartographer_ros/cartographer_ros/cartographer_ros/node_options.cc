@@ -22,7 +22,7 @@
 #include "cartographer/mapping/map_builder_interface.h"
 #include "glog/logging.h"
 * todo: INSTRUCTION
-// LoadOptions()加载配置文件中的参数;
+// node_main.cc调用LoadOptions()加载配置文件中的参数;
 namespace cartographer_ros {
 
 /**
@@ -37,7 +37,7 @@ NodeOptions CreateNodeOptions(
           
   NodeOptions options;
 
-  // 根据lua字典中的参数, 生成protobuf的序列化数据结构 proto::MapBuilderOptions
+  // focus:根据lua字典中的参数, 生成protobuf的序列化数据结构 proto::MapBuilderOptions   从lua文件加载参数
   options.map_builder_options =
       ::cartographer::mapping::CreateMapBuilderOptions(
           lua_parameter_dictionary->GetDictionary("map_builder").get());
@@ -92,7 +92,7 @@ std::tuple<NodeOptions, TrajectoryOptions> LoadOptions(
   // 创建元组tuple,元组定义了一个有固定数目元素的容器, 其中的每个元素类型都可以不相同
   // 将配置文件的内容填充进NodeOptions与TrajectoryOptions, 并返回
   return std::make_tuple(CreateNodeOptions(&lua_parameter_dictionary),
-                         CreateTrajectoryOptions(&lua_parameter_dictionary));
+                         CreateTrajectoryOptions(&lua_parameter_dictionary));//返回给node_main.cc
 }
 
 }  // namespace cartographer_ros

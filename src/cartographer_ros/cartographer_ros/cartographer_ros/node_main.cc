@@ -72,7 +72,7 @@ void Run() {
 
   // 根据Lua配置文件中的内容, 为 node_options, trajectory_options 赋值
   std::tie(node_options, trajectory_options) =
-      LoadOptions(FLAGS_configuration_directory, FLAGS_configuration_basename);
+      LoadOptions(FLAGS_configuration_directory, FLAGS_configuration_basename);//加载配置文件
 
   // MapBuilder类是完整的SLAM算法类
   // 包含前端(TrajectoryBuilders,scan to submap) 与 后端(用于查找回环的PoseGraph) 
@@ -87,7 +87,7 @@ void Run() {
 
   // Node类的初始化, 将ROS的topic传入SLAM, 也就是MapBuilder(Node类是cartographer_ros里的一个重要类,用于读取ROS数据话题,发布轨迹,submap，将传感器数据再传给cartographer)
   Node node(node_options, std::move(map_builder), &tf_buffer,
-            FLAGS_collect_metrics);
+            FLAGS_collect_metrics);//Node类实例化
 
   // 如果加载了pbstream文件, 就执行这个函数
   if (!FLAGS_load_state_filename.empty()) {
@@ -102,7 +102,7 @@ void Run() {
   ::ros::spin();//单线程,以一定频率执行所有回调函数,会有一定的次序
 
   // 结束所有处于活动状态的轨迹Ctrl + C
-  node.FinishAllTrajectories();
+  node.FinishAllTrajec  tories();
 
   // 当所有的轨迹结束时, 再执行一次全局优化
   node.RunFinalOptimization();

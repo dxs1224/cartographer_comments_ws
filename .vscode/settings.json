@@ -19,6 +19,7 @@
     "note",
     "tag",
     "todo",
+    "focus",
   ],
   "todo-tree.highlights.customHighlight": {
     "?": {
@@ -73,6 +74,12 @@
       "foreground": "#f90",
       "rulerColour": "#f90",
       "iconColour": "#f90",
+      "type": "text-and-comment",
+    },
+    "focus": {
+      "foreground": "#f70e0e",
+      "rulerColour": "#f70e0e",
+      "iconColour": "#f70e0e",
       "type": "text-and-comment",
     },
     

@@ -75,10 +75,10 @@ class Node {
   // exist or was already finished.
   bool FinishTrajectory(int trajectory_id);
 
-  // Runs final optimization. All trajectories have to be finished when calling.
+  // Runs final optimization. All trajectories have to be finished when calling.运行最终优化。调用时必须完成所有轨迹。
   void RunFinalOptimization();
 
-  // Starts the first trajectory with the default topics.
+  // Starts the first trajectory with the default topics.使用默认主题开始第一个轨迹。
   void StartTrajectoryWithDefaultTopics(const TrajectoryOptions& options);
 
   // Returns unique SensorIds for multiple input bag files based on
@@ -96,7 +96,7 @@ class Node {
           expected_sensor_ids,
       const TrajectoryOptions& options);
 
-  // The following functions handle adding sensor data to a trajectory.
+  // The following functions handle adding sensor data to a trajectory.以下函数处理将传感器数据添加到轨迹中。
   void HandleOdometryMessage(int trajectory_id, const std::string& sensor_id,
                              const nav_msgs::Odometry::ConstPtr& msg);
   void HandleNavSatFixMessage(int trajectory_id, const std::string& sensor_id,
@@ -118,7 +118,7 @@ class Node {
   void SerializeState(const std::string& filename,
                       const bool include_unfinished_submaps);
 
-  // Loads a serialized SLAM state from a .pbstream file.
+  // Loads a serialized SLAM state from a .pbstream file.从 .pbstream 文件加载序列化的 SLAM 状态。
   void LoadState(const std::string& state_filename, bool load_frozen_state);
 
   ::ros::NodeHandle* node_handle();
