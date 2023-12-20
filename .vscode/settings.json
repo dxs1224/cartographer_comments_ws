@@ -179,7 +179,8 @@
     "core": "cpp",
     "csignal": "cpp",
     "any": "cpp",
-    "future": "cpp"
+    "future": "cpp",
+    "memory_resource": "cpp"
   },
   "python.autoComplete.extraPaths": [
     "/opt/ros/kinetic/lib/python2.7/dist-packages"

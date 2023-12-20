@@ -549,7 +549,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
     };
   */
  
-  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;
+  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//传感器的类型+名字
   using SensorType = SensorId::SensorType;
   std::set<SensorId> expected_topics;
   // Subscribe to all laser scan, multi echo laser scan, and point cloud topics.
@@ -557,7 +557,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
   // 如果只有一个传感器, 那订阅的topic就是topic
   // 如果是多个传感器, 那订阅的topic就是topic_1,topic_2, 依次类推
   for (const std::string& topic :
-       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {
+       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//根据传感器数量,生成topic名字
     expected_topics.insert(SensorId{SensorType::RANGE, topic});
   }
   for (const std::string& topic : ComputeRepeatedTopicNames(
@@ -606,9 +606,9 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
 int Node::AddTrajectory(const TrajectoryOptions& options) {
 
   const std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
-      expected_sensor_ids = ComputeExpectedSensorIds(options);
+      expected_sensor_ids = ComputeExpectedSensorIds(options);//计算所有的sensorID
 
-  // 调用map_builder_bridge的AddTrajectory, 添加一个轨迹
+  // 调用map_builder_bridge的AddTrajectory, 添加一个轨迹，返回轨迹ID
   const int trajectory_id =
       map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);
 

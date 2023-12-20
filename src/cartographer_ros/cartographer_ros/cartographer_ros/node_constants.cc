@@ -28,15 +28,15 @@ namespace cartographer_ros {
  * @param[in] num_topics 传感器的个数
  * @return std::vector<std::string> 订阅话题的名字的集合
  */
-std::vector<std::string> ComputeRepeatedTopicNames(const std::string& topic,
+std::vector<std::string> ComputeRepeatedTopicNames(const std::string& topic,//传入topic名字,和topic数量
                                                    const int num_topics) {
-  CHECK_GE(num_topics, 0);
-  if (num_topics == 1) {
+  CHECK_GE(num_topics, 0);//topic数量是否≥0
+  if (num_topics == 1) {//1个topic,就不做处理
     return {topic};
   }
   std::vector<std::string> topics;
   topics.reserve(num_topics);
-  for (int i = 0; i < num_topics; ++i) {
+  for (int i = 0; i < num_topics; ++i) {//多个topic,就从1开始:scan_1,scan_2...
     topics.emplace_back(topic + "_" + std::to_string(i + 1));
   }
   // num_topics要是0就返回空的vector
