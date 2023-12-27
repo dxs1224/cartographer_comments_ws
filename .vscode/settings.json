@@ -180,7 +180,11 @@
     "csignal": "cpp",
     "any": "cpp",
     "future": "cpp",
-    "memory_resource": "cpp"
+    "memory_resource": "cpp",
+    "variant": "cpp",
+    "random": "cpp",
+    "shared_mutex": "cpp",
+    "bit": "cpp"
   },
   "python.autoComplete.extraPaths": [
     "/opt/ros/kinetic/lib/python2.7/dist-packages"

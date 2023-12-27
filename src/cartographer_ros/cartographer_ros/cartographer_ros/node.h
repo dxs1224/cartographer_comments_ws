@@ -208,18 +208,18 @@ class Node {
   
   // 控制各个传感器数据的采样频率
   struct TrajectorySensorSamplers {
-    TrajectorySensorSamplers(const double rangefinder_sampling_ratio,
+    TrajectorySensorSamplers(const double rangefinder_sampling_ratio,//分别接收五种采样器频率
                              const double odometry_sampling_ratio,
                              const double fixed_frame_pose_sampling_ratio,
                              const double imu_sampling_ratio,
                              const double landmark_sampling_ratio)
-        : rangefinder_sampler(rangefinder_sampling_ratio),
+        : rangefinder_sampler(rangefinder_sampling_ratio),//对五种采样器进行初始化
           odometry_sampler(odometry_sampling_ratio),
           fixed_frame_pose_sampler(fixed_frame_pose_sampling_ratio),
           imu_sampler(imu_sampling_ratio),
           landmark_sampler(landmark_sampling_ratio) {}
 
-    ::cartographer::common::FixedRatioSampler rangefinder_sampler;
+    ::cartographer::common::FixedRatioSampler rangefinder_sampler;//保存了五个采样器
     ::cartographer::common::FixedRatioSampler odometry_sampler;
     ::cartographer::common::FixedRatioSampler fixed_frame_pose_sampler;
     ::cartographer::common::FixedRatioSampler imu_sampler;

@@ -287,7 +287,7 @@ void Node::PublishSubmapList(const ::ros::WallTimerEvent& unused_timer_event) {
 }
 
 /**
- * @brief 新增一个位姿估计器
+ * @brief 新增一个位姿估计器(IMU和里程计的融合)
  * 
  * @param[in] trajectory_id 轨迹id
  * @param[in] options 参数配置
@@ -316,7 +316,7 @@ void Node::AddExtrapolator(const int trajectory_id,
   // https://www.cnblogs.com/guxuanqing/p/11396511.html
 
   // 以1ms, 以及重力常数10, 作为参数构造PoseExtrapolator
-  extrapolators_.emplace(
+  extrapolators_.emplace(//用emplace构造一个位姿估计器
       std::piecewise_construct, 
       std::forward_as_tuple(trajectory_id),
       std::forward_as_tuple(
@@ -549,7 +549,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
     };
   */
  
-  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//传感器的类型+名字
+  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//SensorId = 传感器的类型 + 名字
   using SensorType = SensorId::SensorType;
   std::set<SensorId> expected_topics;
   // Subscribe to all laser scan, multi echo laser scan, and point cloud topics.
@@ -557,7 +557,7 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
   // 如果只有一个传感器, 那订阅的topic就是topic
   // 如果是多个传感器, 那订阅的topic就是topic_1,topic_2, 依次类推
   for (const std::string& topic :
-       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//根据传感器数量,生成topic名字
+       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//根据传感器数量,生成topic名字,例如scan_1,scan_2
     expected_topics.insert(SensorId{SensorType::RANGE, topic});
   }
   for (const std::string& topic : ComputeRepeatedTopicNames(
@@ -606,11 +606,11 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
 int Node::AddTrajectory(const TrajectoryOptions& options) {
 
   const std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
-      expected_sensor_ids = ComputeExpectedSensorIds(options);//计算所有的sensorID
+      expected_sensor_ids = ComputeExpectedSensorIds(options);//根据options,计算所有的sensorID
 
   // 调用map_builder_bridge的AddTrajectory, 添加一个轨迹，返回轨迹ID
   const int trajectory_id =
-      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);
+      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);//这里调用AddTrajectory生成轨迹,然后返回一个轨迹ID
 
   // 新增一个位姿估计器
   AddExtrapolator(trajectory_id, options);
@@ -720,7 +720,7 @@ void Node::LaunchSubscribers(const TrajectoryOptions& options,
 
 // 检查TrajectoryOptions是否存在2d或者3d轨迹的配置信息
 bool Node::ValidateTrajectoryOptions(const TrajectoryOptions& options) {
-  if (node_options_.map_builder_options.use_trajectory_builder_2d()) {
+  if (node_options_.map_builder_options.use_trajectory_builder_2d()) {//如果使用2D的,就返回2D的options
     return options.trajectory_builder_options
         .has_trajectory_builder_2d_options();
   }

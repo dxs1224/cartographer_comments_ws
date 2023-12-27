@@ -23,13 +23,13 @@ namespace common {
 
 FixedRatioSampler::FixedRatioSampler(const double ratio) : ratio_(ratio) {
   CHECK_GE(ratio, 0.);
-  LOG_IF(WARNING, ratio == 0.) << "FixedRatioSampler is dropping all data.";
+  LOG_IF(WARNING, ratio == 0.) << "FixedRatioSampler is dropping all data.";//频率等于0,发出警告
   CHECK_LE(ratio, 1.);
 }
 
 FixedRatioSampler::~FixedRatioSampler() {}
 
-// 在比例小于ratio_时返回true, ratio_设置为1时都返回true, 也就是说使用所有的数据
+// TODO: 在比例小于ratio_时返回true, ratio_设置为1时都返回true, 也就是说使用所有的数据
 bool FixedRatioSampler::Pulse() {
   ++num_pulses_;
   if (static_cast<double>(num_samples_) / num_pulses_ < ratio_) {
