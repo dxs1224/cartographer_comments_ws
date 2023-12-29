@@ -92,7 +92,7 @@ namespace {
  */
 template <typename MessageType>
 ::ros::Subscriber SubscribeWithHandler(
-    void (Node::*handler)(int, const std::string&,
+    void (Node::*handler)(int, const std::string&,//声明了一个函数指针
                           const typename MessageType::ConstPtr&),
     const int trajectory_id, const std::string& topic,
     ::ros::NodeHandle* const node_handle, Node* const node) {
@@ -645,7 +645,7 @@ void Node::LaunchSubscribers(const TrajectoryOptions& options,
                              const int trajectory_id) {
   // laser_scan 的订阅与注册回调函数, 多个laser_scan 的topic 共用同一个回调函数
   for (const std::string& topic :
-       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {
+       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//计算重复topic名字,然后返回一个数组
     subscribers_[trajectory_id].push_back(
         {SubscribeWithHandler<sensor_msgs::LaserScan>(
              &Node::HandleLaserScanMessage, trajectory_id, topic, &node_handle_,
