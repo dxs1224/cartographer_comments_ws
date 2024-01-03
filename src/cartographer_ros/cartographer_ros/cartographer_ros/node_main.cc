@@ -68,7 +68,7 @@ void Run() {
   NodeOptions node_options;
   TrajectoryOptions trajectory_options;
 
-  // c++11: std::tie()函数可以将变量连接到一个给定的tuple上,生成一个元素类型全是引用的tuple（可以为多个对象同时赋值）
+  // c++11: std::tie()函数可以将变量连接到一个给定的tuple上,生成一个元素类型全是引用的tuple（可以为多个对象同时赋值，但只能是tuple类型）
 
   // 根据Lua配置文件中的内容, 为 node_options, trajectory_options 赋值
   std::tie(node_options, trajectory_options) =

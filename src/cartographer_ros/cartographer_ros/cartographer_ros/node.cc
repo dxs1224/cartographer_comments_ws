@@ -287,7 +287,7 @@ void Node::PublishSubmapList(const ::ros::WallTimerEvent& unused_timer_event) {
 }
 
 /**
- * @brief 新增一个位姿估计器(IMU和里程计的融合)
+ * @brief 新增一个位姿估计器(IMU和里程计的融合,做一个前端匹配前的先验)
  * 
  * @param[in] trajectory_id 轨迹id
  * @param[in] options 参数配置
@@ -299,7 +299,7 @@ void Node::AddExtrapolator(const int trajectory_id,
   // 新生成的轨迹的id 不应该在extrapolators_中
   CHECK(extrapolators_.count(trajectory_id) == 0);
 
-  // imu_gravity_time_constant在2d, 3d中都是10
+  // imu_gravity_time_constant重力时间常量在2d, 3d中都是10
   const double gravity_time_constant =
       node_options_.map_builder_options.use_trajectory_builder_3d()
           ? options.trajectory_builder_options.trajectory_builder_3d_options()
@@ -549,9 +549,9 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
     };
   */
  
-  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//SensorId = 传感器的类型 + 名字
+  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//SensorId = 传感器的类型 + id
   using SensorType = SensorId::SensorType;
-  std::set<SensorId> expected_topics;
+  std::set<SensorId> expected_topics;//存放传感器topic名字的合集
   // Subscribe to all laser scan, multi echo laser scan, and point cloud topics.
 
   // 如果只有一个传感器, 那订阅的topic就是topic
@@ -610,7 +610,7 @@ int Node::AddTrajectory(const TrajectoryOptions& options) {
 
   // 调用map_builder_bridge的AddTrajectory, 添加一个轨迹，返回轨迹ID
   const int trajectory_id =
-      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);//这里调用AddTrajectory生成轨迹,然后返回一个轨迹ID
+      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);//根据生成的传感器话题名和options,这里调用AddTrajectory生成轨迹,然后返回一个轨迹ID
 
   // 新增一个位姿估计器
   AddExtrapolator(trajectory_id, options);
@@ -644,7 +644,7 @@ int Node::AddTrajectory(const TrajectoryOptions& options) {
 void Node::LaunchSubscribers(const TrajectoryOptions& options,
                              const int trajectory_id) {
   // laser_scan 的订阅与注册回调函数, 多个laser_scan 的topic 共用同一个回调函数
-  for (const std::string& topic :
+  for (const std::string& topic ://对topic进行范围for循环
        ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//计算重复topic名字,然后返回一个数组
     subscribers_[trajectory_id].push_back(
         {SubscribeWithHandler<sensor_msgs::LaserScan>(
