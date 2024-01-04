@@ -92,7 +92,7 @@ namespace {
  */
 template <typename MessageType>
 ::ros::Subscriber SubscribeWithHandler(
-    void (Node::*handler)(int, const std::string&,//声明了一个函数指针
+    void (Node::*handler)(int, const std::string&,//声明了一个函数指针,在Node类下的handler函数指针void (Class::*fp)(int ,int)
                           const typename MessageType::ConstPtr&),
     const int trajectory_id, const std::string& topic,
     ::ros::NodeHandle* const node_handle, Node* const node) {
@@ -1121,17 +1121,17 @@ void Node::RunFinalOptimization() {
 void Node::HandleOdometryMessage(const int trajectory_id,
                                  const std::string& sensor_id,
                                  const nav_msgs::Odometry::ConstPtr& msg) {
-  absl::MutexLock lock(&mutex_);
-  if (!sensor_samplers_.at(trajectory_id).odometry_sampler.Pulse()) {
+  absl::MutexLock lock(&mutex_);//上锁
+  if (!sensor_samplers_.at(trajectory_id).odometry_sampler.Pulse()) {//判断里程计采样器是否处于暂停状态
     return;
   }
-  auto sensor_bridge_ptr = map_builder_bridge_.sensor_bridge(trajectory_id);
-  auto odometry_data_ptr = sensor_bridge_ptr->ToOdometryData(msg);
+  auto sensor_bridge_ptr = map_builder_bridge_.sensor_bridge(trajectory_id);//获取对应轨迹id的SensorBridge的指针
+  auto odometry_data_ptr = sensor_bridge_ptr->ToOdometryData(msg);//将ros格式下的odom数据转换成cartographer格式的odom
   // extrapolators_使用里程计数据进行位姿预测
-  if (odometry_data_ptr != nullptr) {
-    extrapolators_.at(trajectory_id).AddOdometryData(*odometry_data_ptr);
+  if (odometry_data_ptr != nullptr) {//里程计数据的两个走向: 1. 位姿推测器 2. sensor_bridge
+    extrapolators_.at(trajectory_id).AddOdometryData(*odometry_data_ptr);//将carto格式的数据传入位姿推测器
   }
-  sensor_bridge_ptr->HandleOdometryMessage(sensor_id, msg);
+  sensor_bridge_ptr->HandleOdometryMessage(sensor_id, msg);//将ros格式的数据传入HandleOdometryMessage
 }
 
 // 调用SensorBridge的传感器处理函数进行数据处理
@@ -1247,7 +1247,7 @@ void Node::MaybeWarnAboutTopicMismatch(
   std::set<std::string> published_topics;
   std::stringstream published_topics_string;
 
-  // 获取ros中的实际topic的全局名称,resolveName()是获取全局名称
+  // 获取ros中的实际topic的全局名称,resolveName()是获取全局名称,对所有topic名字进行遍历
   for (const auto& it : ros_topics) {
     std::string resolved_topic = node_handle_.resolveName(it.name, false);
     published_topics.insert(resolved_topic);
