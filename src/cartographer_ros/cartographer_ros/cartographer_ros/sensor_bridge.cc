@@ -62,8 +62,8 @@ SensorBridge::SensorBridge(
 std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
     const nav_msgs::Odometry::ConstPtr& msg) {
   const carto::common::Time time = FromRos(msg->header.stamp);
-  // 找到 tracking坐标系 到 里程计的child_frame_id 的坐标变换, 所以下方要对sensor_to_tracking取逆
-  const auto sensor_to_tracking = tf_bridge_.LookupToTracking(
+  // 找到 tracking坐标系 到 里程计的child_frame_id 的坐标变换, 所以下方要对sensor_to_tracking取逆(imu_link->base_link)
+  const auto sensor_to_tracking = tf_bridge_.LookupToTracking(//sensor_to_tracking就是imu_link->base_link
       time, CheckNoLeadingSlash(msg->child_frame_id));
   if (sensor_to_tracking == nullptr) {
     return nullptr;
@@ -72,7 +72,7 @@ std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
   // 将里程计的footprint的pose转成tracking_frame的pose, 再转成carto的里程计数据类型
   return absl::make_unique<carto::sensor::OdometryData>(
       carto::sensor::OdometryData{
-          time, ToRigid3d(msg->pose.pose) * sensor_to_tracking->inverse()});
+          time, ToRigid3d(msg->pose.pose) * sensor_to_tracking->inverse()});//inverse就是base_link->imu_link
 }
 
 // 调用trajectory_builder_的AddSensorData进行数据的处理
