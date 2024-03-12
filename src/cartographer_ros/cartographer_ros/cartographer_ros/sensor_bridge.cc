@@ -63,7 +63,7 @@ std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
     const nav_msgs::Odometry::ConstPtr& msg) {
   const carto::common::Time time = FromRos(msg->header.stamp);
   // 找到 tracking坐标系 到 里程计的child_frame_id 的坐标变换, 所以下方要对sensor_to_tracking取逆(imu_link->base_link)
-  const auto sensor_to_tracking = tf_bridge_.LookupToTracking(//sensor_to_tracking就是imu_link->base_link
+  const auto sensor_to_tracking = tf_bridge_.LookupToTracking(// sensor_to_tracking 就是imu_link->base_link
       time, CheckNoLeadingSlash(msg->child_frame_id));
   if (sensor_to_tracking == nullptr) {
     return nullptr;
