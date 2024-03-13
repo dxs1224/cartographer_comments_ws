@@ -193,5 +193,6 @@
     "/opt/ros/kinetic/lib/python2.7/dist-packages"
   ],
   "cmake.configureOnOpen": true,
-  "editor.inlineSuggest.showToolbar": "onHover"
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "cmake.sourceDirectory": "/home/dxs/cartographer_comments_ws/src/cartographer"
 }
