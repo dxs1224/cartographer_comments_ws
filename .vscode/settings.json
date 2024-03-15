@@ -7,8 +7,8 @@
   "todo-tree.highlights.defaultHighlight": {
     "icon": "alert",
     "type": "text",
-    "foreground": "red",
-    "iconColour": "green"
+    "foreground": "#fc0000",
+    "iconColour": "#47fc00"
   },
   "todo-tree.general.tags": [
     "?",
@@ -24,42 +24,42 @@
   "todo-tree.highlights.customHighlight": {
     "?": {
       "icon": "question",
-      "foreground": "yellow",
-      "iconColour": "yellow",
+      "foreground": "#effc00",
+      "iconColour": "#effc00",
       "type": "text-and-comment"
     },
     "!": {
-      "foreground": "red",
+      "foreground": "#fc001d",
       "icon": "issue-opened",
-      "iconColour": "red",
+      "iconColour": "#fc001d",
       "type": "text-and-comment"
     },
     "Step": {
       "foreground": "#7CFC00",
       "icon": "question",
-      "iconColour": "green",
+      "iconColour": "#7CFC00",
       "type": "text-and-comment",
       "hideFromTree": true
     },
     "c++11": {
       "icon": "tag",
-      "foreground": "violet",
-      "rulerColour": "violet",
-      "iconColour": "violet",
+      "foreground": "#b500fc",
+      "rulerColour": "#b500fc",
+      "iconColour": "#b500fc",
       "type": "text-and-comment",
     },
     "note": {
       "icon": "note",
-      "foreground": "orange",
-      "rulerColour": "orange",
-      "iconColour": "orange",
+      "foreground": "#fca400",
+      "rulerColour": "#fca400",
+      "iconColour": "#fca400",
       "type": "text-and-comment",
     },
     "param": {
       "icon": "issue-closed",
-      "foreground": "orange",
-      "rulerColour": "orange",
-      "iconColour": "orange",
+      "foreground": "#fca400",
+      "rulerColour": "#fca400",
+      "iconColour": "#fca400",
       "type": "text-and-comment",
     },
     "tag": {

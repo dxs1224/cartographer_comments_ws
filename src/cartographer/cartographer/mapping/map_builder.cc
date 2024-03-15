@@ -86,7 +86,7 @@ void MaybeAddPureLocalizationTrimmer(
 MapBuilder::MapBuilder(const proto::MapBuilderOptions& options)
     : options_(options), thread_pool_(options.num_background_threads()) { // param: num_background_threads
   CHECK(options.use_trajectory_builder_2d() ^
-        options.use_trajectory_builder_3d());
+        options.use_trajectory_builder_3d());//异或 都是true或false不通过,只能有一个
 
   // 2d位姿图(后端)的初始化
   if (options.use_trajectory_builder_2d()) {
