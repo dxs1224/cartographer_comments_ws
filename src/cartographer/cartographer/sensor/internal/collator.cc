@@ -30,7 +30,7 @@ void Collator::AddTrajectory(
     const int trajectory_id,
     const absl::flat_hash_set<std::string>& expected_sensor_ids,
     const Callback& callback) {
-  for (const auto& sensor_id : expected_sensor_ids) {
+  for (const auto& sensor_id : expected_sensor_ids) { //对所有topic进行遍历
     const auto queue_key = QueueKey{trajectory_id, sensor_id};
     queue_.AddQueue(queue_key,
                     // void(std::unique_ptr<Data> data) 带了个默认参数sensor_id
