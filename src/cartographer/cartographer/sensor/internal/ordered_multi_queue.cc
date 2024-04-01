@@ -121,7 +121,7 @@ void OrderedMultiQueue::Dispatch() {
   while (true) {
     /*
       queues_: 
-        (0, scan): {      4,     }
+        (0, scan): {      4,     }  trajectory_id 为0 下的scan，1，2，3...代表时间戳顺序
         (0, imu):  {1,  3,   5,  }
         (0, odom): {  2,       6,}
     */
@@ -222,7 +222,7 @@ void OrderedMultiQueue::CannotMakeProgress(const QueueKey& queue_key) {
   // 标记queue_key为阻塞者
   blocker_ = queue_key;
   for (auto& entry : queues_) {
-    // queue_key对应的数据队列为空,而某一个传感器数据队列的数据已经大于kMaxQueueSize了
+    // queue_key对应的数据队列为空,而某一个传感器数据队列的数据已经大于kMaxQueueSize了(一个topic队列为空，另一个topic队列大于500了)
     // 有问题, 进行报错
     if (entry.second.queue.Size() > kMaxQueueSize) {
       // 在该语句第1、61、121……次被执行的时候, 记录日志信息
