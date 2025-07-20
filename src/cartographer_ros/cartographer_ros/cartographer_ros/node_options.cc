@@ -18,7 +18,7 @@
 
 #include <vector>
 
-#include "cartographer/common/configuration_file_resolver.h"//文件读取解析的头文件
+#include "cartographer/common/configuration_file_resolver.h" // 文件读取解析的头文件
 #include "cartographer/mapping/map_builder_interface.h"
 #include "glog/logging.h"
 * todo: INSTRUCTION
@@ -51,7 +51,7 @@ NodeOptions CreateNodeOptions(
       lua_parameter_dictionary->GetDouble("pose_publish_period_sec");
   options.trajectory_publish_period_sec =
       lua_parameter_dictionary->GetDouble("trajectory_publish_period_sec");
-  if (lua_parameter_dictionary->HasKey("publish_to_tf")) {//node_options.h中已经对这三个参数赋值,所以这里只需要判断lua文件中是否有这个值
+  if (lua_parameter_dictionary->HasKey("publish_to_tf")) { // node_options.h中已经对这三个参数赋值,所以这里只需要判断lua文件中是否有这个值
     options.publish_to_tf =
         lua_parameter_dictionary->GetBool("publish_to_tf");
   }
@@ -77,7 +77,7 @@ std::tuple<NodeOptions, TrajectoryOptions> LoadOptions(
     const std::string& configuration_directory,
     const std::string& configuration_basename) {
   // 获取配置文件所在的目录
-  auto file_resolver =  //指针,指向 ConfigurationFileResolver 类
+  auto file_resolver = // 指针,指向 ConfigurationFileResolver 类
       absl::make_unique<cartographer::common::ConfigurationFileResolver>(
           std::vector<std::string>{configuration_directory});
         
@@ -92,7 +92,7 @@ std::tuple<NodeOptions, TrajectoryOptions> LoadOptions(
   // 创建元组tuple,元组定义了一个有固定数目元素的容器, 其中的每个元素类型都可以不相同
   // 将配置文件的内容填充进NodeOptions与TrajectoryOptions, 并返回
   return std::make_tuple(CreateNodeOptions(&lua_parameter_dictionary),
-                         CreateTrajectoryOptions(&lua_parameter_dictionary));//返回给node_main.cc
+                         CreateTrajectoryOptions(&lua_parameter_dictionary)); // 返回给node_main.cc
 }
 
 }  // namespace cartographer_ros

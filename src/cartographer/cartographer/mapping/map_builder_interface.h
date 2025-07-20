@@ -58,7 +58,7 @@ class MapBuilderInterface {
   virtual int AddTrajectoryBuilder(
       const std::set<SensorId>& expected_sensor_ids,
       const proto::TrajectoryBuilderOptions& trajectory_options,
-      LocalSlamResultCallback local_slam_result_callback) = 0;// local_slam_result_callback回调函数对象，用于响应局部地图构建完成的事件
+      LocalSlamResultCallback local_slam_result_callback) = 0; // local_slam_result_callback回调函数对象，用于响应局部地图构建完成的事件
 
   // Creates a new trajectory and returns its index. Querying the trajectory
   // builder for it will return 'nullptr'.
@@ -74,7 +74,7 @@ class MapBuilderInterface {
 
   // Marks the TrajectoryBuilder corresponding to 'trajectory_id' as finished,
   // i.e. no further sensor data is expected.
-  virtual void FinishTrajectory(int trajectory_id) = 0;//用于关闭trajectory_id对应的轨迹跟踪器，该跟踪器将不再响应新的传感器数据。
+  virtual void FinishTrajectory(int trajectory_id) = 0; // 用于关闭trajectory_id对应的轨迹跟踪器，该跟踪器将不再响应新的传感器数据。
 
   // Fills the SubmapQuery::Response corresponding to 'submap_id'. Returns an
   // error string on failure, or an empty string on success.

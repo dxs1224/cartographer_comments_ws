@@ -92,7 +92,7 @@ namespace {
  */
 template <typename MessageType>
 ::ros::Subscriber SubscribeWithHandler(
-    void (Node::*handler)(int, const std::string&,//声明了一个函数指针,在Node类下的handler函数指针void (Class::*fp)(int ,int)
+    void (Node::*handler)(int, const std::string&, // 声明了一个函数指针,在Node类下的handler函数指针void (Class::*fp)(int ,int)
                           const typename MessageType::ConstPtr&),
     const int trajectory_id, const std::string& topic,
     ::ros::NodeHandle* const node_handle, Node* const node) {
@@ -316,7 +316,7 @@ void Node::AddExtrapolator(const int trajectory_id,
   // https://www.cnblogs.com/guxuanqing/p/11396511.html
 
   // 以1ms, 以及重力常数10, 作为参数构造PoseExtrapolator
-  extrapolators_.emplace(//用emplace构造一个位姿估计器
+  extrapolators_.emplace( // 用emplace构造一个位姿估计器
       std::piecewise_construct, 
       std::forward_as_tuple(trajectory_id),
       std::forward_as_tuple(
@@ -535,7 +535,7 @@ std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
 Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
   /*
     enum class SensorType {
-      RANGE = 0,
+      RANGE = 0, 范围传感器（雷达）
       IMU,
       ODOMETRY,
       FIXED_FRAME_POSE,
@@ -549,15 +549,15 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
     };
   */
  
-  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId;//SensorId = 传感器的类型 + id
+  using SensorId = cartographer::mapping::TrajectoryBuilderInterface::SensorId; // SensorId = 传感器的类型 + id
   using SensorType = SensorId::SensorType;
-  std::set<SensorId> expected_topics;//存放传感器topic名字的合集
+  std::set<SensorId> expected_topics; // 存放传感器topic名字的合集
   // Subscribe to all laser scan, multi echo laser scan, and point cloud topics.
 
   // 如果只有一个传感器, 那订阅的topic就是topic
   // 如果是多个传感器, 那订阅的topic就是topic_1,topic_2, 依次类推
   for (const std::string& topic :
-       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//根据传感器数量,生成topic名字,例如scan_1,scan_2
+       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) { // 根据传感器数量,生成topic名字,例如scan_1,scan_2
     expected_topics.insert(SensorId{SensorType::RANGE, topic});
   }
   for (const std::string& topic : ComputeRepeatedTopicNames(
@@ -606,11 +606,11 @@ Node::ComputeExpectedSensorIds(const TrajectoryOptions& options) const {
 int Node::AddTrajectory(const TrajectoryOptions& options) {
 
   const std::set<cartographer::mapping::TrajectoryBuilderInterface::SensorId>
-      expected_sensor_ids = ComputeExpectedSensorIds(options);//根据options,计算所有的sensorID
+      expected_sensor_ids = ComputeExpectedSensorIds(options); // 根据options,计算所有的sensorID
 
   // 调用map_builder_bridge的AddTrajectory, 添加一个轨迹，返回轨迹ID
   const int trajectory_id =
-      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options);//根据生成的传感器话题名和options,这里调用AddTrajectory生成轨迹,然后返回一个轨迹ID
+      map_builder_bridge_.AddTrajectory(expected_sensor_ids, options); // 根据生成的传感器话题名和options,这里调用AddTrajectory生成轨迹,然后返回一个轨迹ID
 
   // 新增一个位姿估计器
   AddExtrapolator(trajectory_id, options);
@@ -621,7 +621,7 @@ int Node::AddTrajectory(const TrajectoryOptions& options) {
   // 订阅话题与注册回调函数
   LaunchSubscribers(options, trajectory_id);
 
-  // 创建了一个3s执行一次的定时器,由于oneshot=true, 所以只执行一次
+  // 创建了一个3s执行一次的定时器,由于oneshot=true, 所以只执行一次，定时器只触发一次回调函数
   // 检查设置的topic名字是否在ros中存在, 不存在则报错
   wall_timers_.push_back(node_handle_.createWallTimer(
       ::ros::WallDuration(kTopicMismatchCheckDelaySec), // kTopicMismatchCheckDelaySec = 3s
@@ -644,8 +644,8 @@ int Node::AddTrajectory(const TrajectoryOptions& options) {
 void Node::LaunchSubscribers(const TrajectoryOptions& options,
                              const int trajectory_id) {
   // laser_scan 的订阅与注册回调函数, 多个laser_scan 的topic 共用同一个回调函数
-  for (const std::string& topic ://对topic进行范围for循环
-       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) {//计算重复topic名字,然后返回一个数组
+  for (const std::string& topic : // 对topic进行范围for循环
+       ComputeRepeatedTopicNames(kLaserScanTopic, options.num_laser_scans)) { // 计算重复topic名字,然后返回一个数组
     subscribers_[trajectory_id].push_back(
         {SubscribeWithHandler<sensor_msgs::LaserScan>(
              &Node::HandleLaserScanMessage, trajectory_id, topic, &node_handle_,
@@ -720,7 +720,7 @@ void Node::LaunchSubscribers(const TrajectoryOptions& options,
 
 // 检查TrajectoryOptions是否存在2d或者3d轨迹的配置信息
 bool Node::ValidateTrajectoryOptions(const TrajectoryOptions& options) {
-  if (node_options_.map_builder_options.use_trajectory_builder_2d()) {//如果使用2D的,就返回2D的options
+  if (node_options_.map_builder_options.use_trajectory_builder_2d()) { // 如果使用2D的,就返回2D的options
     return options.trajectory_builder_options
         .has_trajectory_builder_2d_options();
   }
@@ -1121,17 +1121,17 @@ void Node::RunFinalOptimization() {
 void Node::HandleOdometryMessage(const int trajectory_id,
                                  const std::string& sensor_id,
                                  const nav_msgs::Odometry::ConstPtr& msg) {
-  absl::MutexLock lock(&mutex_);//上锁
-  if (!sensor_samplers_.at(trajectory_id).odometry_sampler.Pulse()) {//判断里程计采样器是否处于暂停状态
+  absl::MutexLock lock(&mutex_);
+  if (!sensor_samplers_.at(trajectory_id).odometry_sampler.Pulse()) { // 判断里程计采样器是否处于暂停状态
     return;
   }
-  auto sensor_bridge_ptr = map_builder_bridge_.sensor_bridge(trajectory_id);//获取对应轨迹id的SensorBridge的指针
-  auto odometry_data_ptr = sensor_bridge_ptr->ToOdometryData(msg);//将ros格式下的odom数据转换成cartographer格式的odom
+  auto sensor_bridge_ptr = map_builder_bridge_.sensor_bridge(trajectory_id); // 获取对应轨迹id的SensorBridge的指针
+  auto odometry_data_ptr = sensor_bridge_ptr->ToOdometryData(msg); // 将ros格式下的odom数据转换成cartographer格式的odom
   // extrapolators_使用里程计数据进行位姿预测
-  if (odometry_data_ptr != nullptr) {//里程计数据的两个走向: 1. 位姿推测器 2. sensor_bridge
-    extrapolators_.at(trajectory_id).AddOdometryData(*odometry_data_ptr);//将carto格式的数据传入位姿推测器
+  if (odometry_data_ptr != nullptr) {
+    extrapolators_.at(trajectory_id).AddOdometryData(*odometry_data_ptr); // 数据走向一：将转换好的数据传入位姿推测器中（融合里程计、IMU数据，推测出一个位姿，发布tf，相关参数：use_pose_extrapolator）
   }
-  sensor_bridge_ptr->HandleOdometryMessage(sensor_id, msg);//将ros格式的数据传入HandleOdometryMessage
+  sensor_bridge_ptr->HandleOdometryMessage(sensor_id, msg); // 数据走向二：将原始msg数据传入sensor_bridge中
 }
 
 // 调用SensorBridge的传感器处理函数进行数据处理

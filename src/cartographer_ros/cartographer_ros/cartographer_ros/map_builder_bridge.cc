@@ -163,7 +163,7 @@ int MapBuilderBridge::AddTrajectory(
       trajectory_options.tracking_frame,
       node_options_.lookup_transform_timeout_sec, 
       tf_buffer_,
-      map_builder_->GetTrajectoryBuilder(trajectory_id)); // CollatedTrajectoryBuilder
+      map_builder_->GetTrajectoryBuilder(trajectory_id)); // 调用map_builder.h里的函数返回一个指向CollatedTrajectoryBuilder的原始指针
   
   // Step: 3 保存轨迹的参数配置
   auto emplace_result =

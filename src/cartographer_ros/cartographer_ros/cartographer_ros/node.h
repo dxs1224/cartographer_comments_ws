@@ -208,18 +208,18 @@ class Node {
   
   // 控制各个传感器数据的采样频率
   struct TrajectorySensorSamplers {
-    TrajectorySensorSamplers(const double rangefinder_sampling_ratio,//分别接收五种采样器频率
+    TrajectorySensorSamplers(const double rangefinder_sampling_ratio, // 分别接收五种采样器频率
                              const double odometry_sampling_ratio,
                              const double fixed_frame_pose_sampling_ratio,
                              const double imu_sampling_ratio,
                              const double landmark_sampling_ratio)
-        : rangefinder_sampler(rangefinder_sampling_ratio),//对五种采样器进行初始化
+        : rangefinder_sampler(rangefinder_sampling_ratio), // 对五种采样器进行初始化
           odometry_sampler(odometry_sampling_ratio),
           fixed_frame_pose_sampler(fixed_frame_pose_sampling_ratio),
           imu_sampler(imu_sampling_ratio),
           landmark_sampler(landmark_sampling_ratio) {}
 
-    ::cartographer::common::FixedRatioSampler rangefinder_sampler;//保存了五个采样器
+    ::cartographer::common::FixedRatioSampler rangefinder_sampler; // 保存了五个采样器
     ::cartographer::common::FixedRatioSampler odometry_sampler;
     ::cartographer::common::FixedRatioSampler fixed_frame_pose_sampler;
     ::cartographer::common::FixedRatioSampler imu_sampler;
@@ -230,7 +230,7 @@ class Node {
   // 相对于std::map, unordered_map的查找和插入的效率高, 时间复杂度为常数级别O(1),而额外空间复杂度则要高出许多
   // 对于需要高效率查询的情况, 使用unordered_map容器, 但是unordered_map对于迭代器遍历效率并不高
 
-  // These are keyed with 'trajectory_id'.// C++ 中，键值对通常是通过使用关联容器来表示的。标准库中的 std::map 和 std::unordered_map 是两个常见的关联容器，用于存储键值对。
+  // These are keyed with 'trajectory_id'. // C++ 中，键值对通常是通过使用关联容器来表示的。标准库中的 std::map 和 std::unordered_map 是两个常见的关联容器，用于存储键值对。
   std::map<int, ::cartographer::mapping::PoseExtrapolator> extrapolators_;
   std::map<int, ::ros::Time> last_published_tf_stamps_;
   std::unordered_map<int, TrajectorySensorSamplers> sensor_samplers_;
