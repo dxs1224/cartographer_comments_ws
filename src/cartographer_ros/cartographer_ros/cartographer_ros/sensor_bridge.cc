@@ -53,17 +53,17 @@ SensorBridge::SensorBridge(
     const int num_subdivisions_per_laser_scan,
     const std::string& tracking_frame,
     const double lookup_transform_timeout_sec, tf2_ros::Buffer* const tf_buffer,
-    carto::mapping::TrajectoryBuilderInterface* const trajectory_builder)
+    carto::mapping::TrajectoryBuilderInterface* const trajectory_builder) // CollatedTrajectoryBuilder
     : num_subdivisions_per_laser_scan_(num_subdivisions_per_laser_scan),
       tf_bridge_(tracking_frame, lookup_transform_timeout_sec, tf_buffer),
-      trajectory_builder_(trajectory_builder) {}
+      trajectory_builder_(trajectory_builder) {} // CollatedTrajectoryBuilder
 
 // 将ros格式的里程计数据 转成tracking frame的pose, 再转成carto的里程计数据类型
 std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
     const nav_msgs::Odometry::ConstPtr& msg) {
   const carto::common::Time time = FromRos(msg->header.stamp);
   // 找到 tracking坐标系 到 里程计的child_frame_id 的坐标变换, 所以下方要对sensor_to_tracking取逆(imu_link->base_link)
-  const auto sensor_to_tracking = tf_bridge_.LookupToTracking(// sensor_to_tracking 就是imu_link->base_link
+  const auto sensor_to_tracking = tf_bridge_.LookupToTracking( // sensor_to_tracking 就是imu_link->base_link
       time, CheckNoLeadingSlash(msg->child_frame_id));
   if (sensor_to_tracking == nullptr) {
     return nullptr;
@@ -72,7 +72,7 @@ std::unique_ptr<carto::sensor::OdometryData> SensorBridge::ToOdometryData(
   // 将里程计的footprint的pose转成tracking_frame的pose, 再转成carto的里程计数据类型
   return absl::make_unique<carto::sensor::OdometryData>(
       carto::sensor::OdometryData{
-          time, ToRigid3d(msg->pose.pose) * sensor_to_tracking->inverse()});//inverse就是base_link->imu_link
+          time, ToRigid3d(msg->pose.pose) * sensor_to_tracking->inverse()}); // inverse就是base_link->imu_link
 }
 
 // 调用trajectory_builder_的AddSensorData进行数据的处理
@@ -94,6 +94,7 @@ void SensorBridge::HandleNavSatFixMessage(
     const std::string& sensor_id, const sensor_msgs::NavSatFix::ConstPtr& msg) {
   const carto::common::Time time = FromRos(msg->header.stamp);
   // 如果不是固定解,就加入一个固定的空位姿
+  // (DXS DOING: 这里cartographer只做了固定解的判断，没有做其他判断。例如：1.过桥洞时，是固定解，但位姿跳动大 2.是固定解，但协方差很大，达到16、19。协方差开根号即位姿跳动范围，即4m的跳动范围)
   if (msg->status.status == sensor_msgs::NavSatStatus::STATUS_NO_FIX) {
     trajectory_builder_->AddSensorData(
         sensor_id,

@@ -41,7 +41,7 @@ CollatedTrajectoryBuilder::CollatedTrajectoryBuilder(
     const proto::TrajectoryBuilderOptions& trajectory_options,
     sensor::CollatorInterface* const sensor_collator, const int trajectory_id,
     const std::set<SensorId>& expected_sensor_ids,
-    std::unique_ptr<TrajectoryBuilderInterface> wrapped_trajectory_builder)
+    std::unique_ptr<TrajectoryBuilderInterface> wrapped_trajectory_builder) // GlobalTrajectoryBuilder
     : sensor_collator_(sensor_collator),
       
       // 以下两个参数在 configuration_files/trajectory_builder.lua 中
@@ -55,7 +55,7 @@ CollatedTrajectoryBuilder::CollatedTrajectoryBuilder(
       last_logging_time_(std::chrono::steady_clock::now()) {
         
   // 获取topic的名字, 并根据参数配置决定是否加入LANDMARK与gps的topic
-  absl::flat_hash_set<std::string> expected_sensor_id_strings;
+  absl::flat_hash_set<std::string> expected_sensor_id_strings; // 因为是set，所以不会有重复的topic名字
   for (const auto& sensor_id : expected_sensor_ids) {
     // collate_landmarks 为 false, sensor_collator_不处理LANDMARK数据
     if (sensor_id.type == SensorId::SensorType::LANDMARK &&

@@ -72,12 +72,12 @@ void Run() {
 
   // 根据Lua配置文件中的内容, 为 node_options, trajectory_options 赋值
   std::tie(node_options, trajectory_options) =
-      LoadOptions(FLAGS_configuration_directory, FLAGS_configuration_basename);//加载配置文件
+      LoadOptions(FLAGS_configuration_directory, FLAGS_configuration_basename); // 加载配置文件
 
   // MapBuilder类是完整的SLAM算法类
   // 包含前端(TrajectoryBuilders,scan to submap) 与 后端(用于查找回环的PoseGraph) 
   auto map_builder =
-      cartographer::mapping::CreateMapBuilder(node_options.map_builder_options);//map_builder是指向MapBuilder的智能指针，相当于是MapBuilder的API接口
+      cartographer::mapping::CreateMapBuilder(node_options.map_builder_options); // map_builder是指向MapBuilder的智能指针，相当于是MapBuilder的API接口
   
   // c++11: std::move 是将对象的状态或者所有权从一个对象转移到另一个对象, 
   // 只是转移, 没有内存的搬迁或者内存拷贝所以可以提高利用效率,改善性能..
@@ -87,7 +87,7 @@ void Run() {
 
   // Node类的初始化, 将ROS的topic传入SLAM, 也就是MapBuilder(Node类是cartographer_ros里的一个重要类,用于读取ROS数据话题,发布轨迹,submap，将传感器数据再传给cartographer)
   Node node(node_options, std::move(map_builder), &tf_buffer,
-            FLAGS_collect_metrics);//Node类实例化
+            FLAGS_collect_metrics); // Node类实例化
 
   // 如果加载了pbstream文件, 就执行这个函数
   if (!FLAGS_load_state_filename.empty()) {
@@ -99,7 +99,7 @@ void Run() {
     node.StartTrajectoryWithDefaultTopics(trajectory_options);
   }
 
-  ::ros::spin();//单线程,以一定频率执行所有回调函数,会有一定的次序
+  ::ros::spin(); // 单线程,以一定频率执行所有回调函数,会有一定的次序
 
   // 结束所有处于活动状态的轨迹Ctrl + C
   node.FinishAllTrajec  tories();
@@ -124,7 +124,7 @@ int main(int argc, char** argv) {
   
   // 使用gflags进行参数的初始化. 其中第三个参数为remove_flag
   // 如果为true, gflags会移除parse过的参数, 否则gflags就会保留这些参数, 但可能会对参数顺序进行调整.
-  google::ParseCommandLineFlags(&argc, &argv, true);//参数解析，像上述中的‘ configuration_directory ’就会被赋值
+  google::ParseCommandLineFlags(&argc, &argv, true); // 参数解析，像上述中的‘ configuration_directory ’就会被赋值
 
   /**
    * @brief glog里提供的CHECK系列的宏, 检测某个表达式是否为真
