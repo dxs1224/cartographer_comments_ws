@@ -184,7 +184,19 @@
     "variant": "cpp",
     "random": "cpp",
     "shared_mutex": "cpp",
-    "bit": "cpp"
+    "bit": "cpp",
+    "cassert": "cpp",
+    "ccomplex": "cpp",
+    "cerrno": "cpp",
+    "cfloat": "cpp",
+    "ciso646": "cpp",
+    "climits": "cpp",
+    "compare": "cpp",
+    "locale": "cpp",
+    "ranges": "cpp",
+    "stop_token": "cpp",
+    "cstdbool": "cpp",
+    "*.txx": "cpp"
   },
   "python.autoComplete.extraPaths": [
     "/opt/ros/kinetic/lib/python2.7/dist-packages"
