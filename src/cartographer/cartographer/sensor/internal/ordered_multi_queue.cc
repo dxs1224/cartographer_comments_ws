@@ -122,8 +122,8 @@ void OrderedMultiQueue::Dispatch() {
     /*
       queues_: 
         (0, scan): {      4,     }  trajectory_id 为0 下的scan，1，2，3...代表时间戳顺序
-        (0, imu):  {1,  3,   5,  }
-        (0, odom): {  2,       6,}
+        (0, imu):  {1,  3,   5,  }  trajectory_id 为0 下的imu，1，2，3...代表时间戳顺序
+        (0, odom): {  2,       6,}  trajectory_id 为0 下的odom，1，2，3...代表时间戳顺序
     */
     const Data* next_data = nullptr;
     Queue* next_queue = nullptr;
@@ -173,7 +173,7 @@ void OrderedMultiQueue::Dispatch() {
     // all queues of this trajectory until a common start time has been reached.
     // 如果我们还没有为这个轨迹分配任何数据, 快进这个轨迹的所有队列, 直到达到一个共同的开始时间
     
-    // Step: 2 获取对应轨迹id的所有数据队列中的最小共同时间戳, 作为轨迹开始的时间
+    // Step: 2 （所有的数据队列都不为空的情况下，才会执行到这）获取对应轨迹id的所有数据队列中的最小共同时间戳, 作为轨迹开始的时间
     const common::Time common_start_time =
         GetCommonStartTime(next_queue_key.trajectory_id);
 
