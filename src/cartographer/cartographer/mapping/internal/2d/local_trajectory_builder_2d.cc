@@ -42,14 +42,14 @@ static auto* kScanMatcherResidualAngleMetric = metrics::Histogram::Null();
  * @param[in] expected_range_sensor_ids 所有range类型的话题
  */
 LocalTrajectoryBuilder2D::LocalTrajectoryBuilder2D(
-    const proto::LocalTrajectoryBuilderOptions2D& options,
+    const proto::LocalTrajectoryBuilderOptions2D& options, // 这里的options就是trajectory_builder_2d.lua里的参数
     const std::vector<std::string>& expected_range_sensor_ids)
     : options_(options),
-      active_submaps_(options.submaps_options()),
-      motion_filter_(options_.motion_filter_options()),
+      active_submaps_(options.submaps_options()), // submaps_options对应trajectory_builder_2d.lua里的submaps
+      motion_filter_(options_.motion_filter_options()), // motion_filter_options对应trajectory_builder_2d.lua里的motion_filter
       real_time_correlative_scan_matcher_(
-          options_.real_time_correlative_scan_matcher_options()),
-      ceres_scan_matcher_(options_.ceres_scan_matcher_options()),
+          options_.real_time_correlative_scan_matcher_options()), // real_time_correlative_scan_matcher_options对应trajectory_builder_2d.lua里的real_time_correlative_scan_matcher
+      ceres_scan_matcher_(options_.ceres_scan_matcher_options()), // ceres_scan_matcher_options对应trajectory_builder_2d.lua里的ceres_scan_matcher
       range_data_collator_(expected_range_sensor_ids) {}
 
 LocalTrajectoryBuilder2D::~LocalTrajectoryBuilder2D() {}
@@ -130,7 +130,7 @@ std::unique_ptr<transform::Rigid2d> LocalTrajectoryBuilder2D::ScanMatch(
 }
 
 /**
- * @brief 处理点云数据, 进行扫描匹配, 将点云写成地图
+ * @brief 处理点云数据, 进行扫描匹配, 将点云写成地图, 然后再返回结果
  * 
  * @param[in] sensor_id 点云数据对应的话题名称
  * @param[in] unsynchronized_data 传入的点云数据
@@ -139,7 +139,7 @@ std::unique_ptr<transform::Rigid2d> LocalTrajectoryBuilder2D::ScanMatch(
 std::unique_ptr<LocalTrajectoryBuilder2D::MatchingResult>
 LocalTrajectoryBuilder2D::AddRangeData(
     const std::string& sensor_id,
-    const sensor::TimedPointCloudData& unsynchronized_data) {
+    const sensor::TimedPointCloudData& unsynchronized_data/*未同步的点云数据*/) {
   
   // Step: 1 进行多个雷达点云数据的时间同步, 点云的坐标是相对于tracking_frame的
   auto synchronized_data =
