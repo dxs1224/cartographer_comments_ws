@@ -102,14 +102,14 @@ class LocalTrajectoryBuilder2D {
   void InitializeExtrapolator(common::Time time);
 
   const proto::LocalTrajectoryBuilderOptions2D options_;
-  ActiveSubmaps2D active_submaps_;
+  ActiveSubmaps2D active_submaps_; // 活跃的子图vetor, 最多只有2个子图
 
-  MotionFilter motion_filter_;
-  scan_matching::RealTimeCorrelativeScanMatcher2D
+  MotionFilter motion_filter_; // 运动过滤, 如果运动的太近或者时间太短, 就不处理
+  scan_matching::RealTimeCorrelativeScanMatcher2D // 相关性扫描匹配器
       real_time_correlative_scan_matcher_;
-  scan_matching::CeresScanMatcher2D ceres_scan_matcher_;
+  scan_matching::CeresScanMatcher2D ceres_scan_matcher_; // ceres扫描匹配器
 
-  std::unique_ptr<PoseExtrapolator> extrapolator_;
+  std::unique_ptr<PoseExtrapolator> extrapolator_; // 位姿估计器
 
   int num_accumulated_ = 0;
   sensor::RangeData accumulated_range_data_;
@@ -118,7 +118,7 @@ class LocalTrajectoryBuilder2D {
   absl::optional<double> last_thread_cpu_time_seconds_;
   absl::optional<common::Time> last_sensor_time_;
 
-  RangeDataCollator range_data_collator_;
+  RangeDataCollator range_data_collator_; // 雷达数据时间同步的一个类
 };
 
 }  // namespace mapping

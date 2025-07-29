@@ -37,7 +37,7 @@ constexpr float RangeDataCollator::kDefaultIntensityValue;
 sensor::TimedPointCloudOriginData RangeDataCollator::AddRangeData(
     const std::string& sensor_id,
     sensor::TimedPointCloudData timed_point_cloud_data) { // 第一次拷贝
-  CHECK_NE(expected_sensor_ids_.count(sensor_id), 0);
+  CHECK_NE(expected_sensor_ids_.count(sensor_id), 0); // 检查雷达话题的名字是否为空
 
   // 从sensor_bridge传过来的数据的intensities为空
   timed_point_cloud_data.intensities.resize(
