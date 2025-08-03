@@ -183,9 +183,9 @@ LocalTrajectoryBuilder2D::AddRangeData(
 
   // 预测得到每一个时间点的位姿
   for (const auto& range : synchronized_data.ranges) {
-    common::Time time_point = time + common::FromSeconds(range.point_time.time);
-    // 如果该时间比上次预测位姿的时间还要早,说明这个点的时间戳往回走了, 就报错
-    if (time_point < extrapolator_->GetLastExtrapolatedTime()) {
+    common::Time time_point = time + common::FromSeconds(range.point_time.time); // 获取点云每一个点的时间
+    // 如果该时间比上次预测位姿的时间还要早,说明这个点的时间戳往回走了, 就报错(位姿估计器根据上一帧的点云数据进行校准)
+    if (time_point < extrapolator_->GetLastExtrapolatedTime()/*获取上一次位姿估计器的校准时间*/) {
       // 一个循环只报一次错
       if (!warned) {
         LOG(ERROR)
@@ -209,14 +209,14 @@ LocalTrajectoryBuilder2D::AddRangeData(
 
   // Drop any returns below the minimum range and convert returns beyond the
   // maximum range into misses.
-  // 对每个数据点进行处理
+  // 对每个数据点进行去畸变处理
   for (size_t i = 0; i < synchronized_data.ranges.size(); ++i) {
     // 获取在tracking frame 下点的坐标
     const sensor::TimedRangefinderPoint& hit =
         synchronized_data.ranges[i].point_time;
     // 将点云的origins坐标转到 local slam 坐标系下
     const Eigen::Vector3f origin_in_local =
-        range_data_poses[i] *
+        range_data_poses[i]/*根据位姿估计器预测出来的位姿变换*/ *
         synchronized_data.origins.at(synchronized_data.ranges[i].origin_index);
     
     // Step: 3 运动畸变的去除, 将相对于tracking_frame的hit坐标 转成 local坐标系下的坐标
@@ -252,26 +252,27 @@ LocalTrajectoryBuilder2D::AddRangeData(
     const common::Time current_sensor_time = synchronized_data.time;
     absl::optional<common::Duration> sensor_duration;
     if (last_sensor_time_.has_value()) {
-      sensor_duration = current_sensor_time - last_sensor_time_.value();
+      sensor_duration = current_sensor_time - last_sensor_time_.value(); // 两帧扫描匹配的时间差
     }
     last_sensor_time_ = current_sensor_time;
 
     // 重置变量
     num_accumulated_ = 0;
 
-    // 获取机器人当前姿态
+    // 获取机器人当前姿态(这个姿态是相对于启动cartographer初始时的姿态)
     const transform::Rigid3d gravity_alignment = transform::Rigid3d::Rotation(
         extrapolator_->EstimateGravityOrientation(time));
 
     // TODO(gaschler): This assumes that 'range_data_poses.back()' is at time
     // 'time'.
+    // note: 地图的原点就是这里的origin
     // 以最后一个点的时间戳估计出的坐标为这帧数据的原点
     accumulated_range_data_.origin = range_data_poses.back().translation();
     
     return AddAccumulatedRangeData(
         time,
-        // 将点云变换到local原点处, 且姿态为0
         TransformToGravityAlignedFrameAndFilter(
+            // 将点云变换到local原点处, 且姿态为0
             gravity_alignment.cast<float>() * range_data_poses.back().inverse(),
             accumulated_range_data_),
         gravity_alignment, sensor_duration);

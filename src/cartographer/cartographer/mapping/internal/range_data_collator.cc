@@ -53,9 +53,9 @@ sensor::TimedPointCloudOriginData RangeDataCollator::AddRangeData(
     // the two (do not send out current).
     // 本次时间同步的结束时间为这帧点云数据的结束时间
     current_end_ = id_to_pending_data_.at(sensor_id).time;
-    auto result = CropAndMerge();
+    auto result = CropAndMerge(); // 进行时间同步，并返回同步后的点云数据
     // 保存当前点云
-    id_to_pending_data_.emplace(sensor_id, std::move(timed_point_cloud_data));
+    id_to_pending_data_.emplace(sensor_id, std::move(timed_point_cloud_data)); // 将当前点云添加到待时间同步处理的map中
     return result;
   }
 
@@ -92,10 +92,10 @@ sensor::TimedPointCloudOriginData RangeDataCollator::CropAndMerge() {
     const sensor::TimedPointCloud& ranges = it->second.ranges;
     const std::vector<float>& intensities = it->second.intensities;
 
-    // 找到点云中 最后一个时间戳小于current_start_的点的索引
+    // 找到点云中 第一个时间戳大于等于current_start_的点的索引
     auto overlap_begin = ranges.begin();
     while (overlap_begin < ranges.end() &&
-           data.time + common::FromSeconds((*overlap_begin).time) <
+           data.time/*点云最后一个点的时间*/ + common::FromSeconds((*overlap_begin).time) <
                current_start_) {
       ++overlap_begin;
     }
