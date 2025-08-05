@@ -58,7 +58,7 @@ std::unique_ptr<PoseExtrapolator> PoseExtrapolator::InitializeWithImu(
   return extrapolator;
 }
 
-// 返回上次校准位姿的时间
+// 返回上次校准位姿的时间 pose是指扫描匹配之后返回的位姿
 common::Time PoseExtrapolator::GetLastPoseTime() const {
   // 如果尚未添加任何位姿, 则返回Time::min()
   if (timed_pose_queue_.empty()) {
