@@ -194,7 +194,7 @@ std::vector<std::shared_ptr<const Submap2D>> ActiveSubmaps2D::InsertRangeData(
   // 因为这时第一个子图应该已经处于完成状态了
   if (submaps_.empty() ||
       submaps_.back()->num_range_data() == options_.num_range_data()) {
-    AddSubmap(range_data.origin.head<2>());
+    AddSubmap(range_data.origin.head<2>/*x, y*/());
   }
   // 将一帧雷达数据同时写入两个子图中
   for (auto& submap : submaps_) {
@@ -275,7 +275,7 @@ void ActiveSubmaps2D::AddSubmap(const Eigen::Vector2f& origin) {
   }
   // 新建一个子图, 并保存指向新子图的智能指针
   submaps_.push_back(absl::make_unique<Submap2D>(
-      origin,
+      origin, // 雷达数据的原点
       std::unique_ptr<Grid2D>(
           static_cast<Grid2D*>(CreateGrid(origin).release())),
       &conversion_tables_));
