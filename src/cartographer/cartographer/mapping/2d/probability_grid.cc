@@ -76,7 +76,7 @@ bool ProbabilityGrid::ApplyLookupTable(const Eigen::Array2i& cell_index,
   const int flat_index = ToFlatIndex(cell_index);
   // 获取对应栅格的指针
   uint16* cell = &(*mutable_correspondence_cost_cells())[flat_index];
-  // 对处于更新状态的栅格, 不再进行更新了
+  // 对处于更新状态的栅格, 不再进行更新了(一帧雷达数据只更新一次栅格)
   if (*cell >= kUpdateMarker) {
     return false;
   }

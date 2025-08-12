@@ -88,7 +88,7 @@ LocalTrajectoryBuilder2D::TransformToGravityAlignedFrameAndFilter(
 std::unique_ptr<transform::Rigid2d> LocalTrajectoryBuilder2D::ScanMatch(
     const common::Time time, const transform::Rigid2d& pose_prediction,
     const sensor::PointCloud& filtered_gravity_aligned_point_cloud) {
-  if (active_submaps_.submaps().empty()) {
+  if (active_submaps_.submaps().empty()) { // 在扫描匹配中,如果没有子图, 则直接返回传入的先验位姿
     return absl::make_unique<transform::Rigid2d>(pose_prediction);
   }
   // 使用active_submaps_的第一个子图进行匹配
