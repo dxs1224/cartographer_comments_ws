@@ -27,7 +27,7 @@ namespace cartographer {
 namespace common {
 
 constexpr int64 kUtsEpochOffsetFromUnixEpochInSeconds =
-    (719162ll * 24ll * 60ll * 60ll);
+    (719162ll * 24ll * 60ll * 60ll);//天,小时,分钟,秒
 
 struct UniversalTimeScaleClock {
   using rep = int64;

@@ -1,2 +1,2 @@
 cartographer:cartographer_ros/cartographer_ros:cartographer_ros/cartographer_ros_msgs:cartographer_ros/cartographer_rviz
--DCMAKE_EXPORT_COMPILE_COMMANDS=Yes -G Ninja -DCATKIN_DEVEL_PREFIX=/home/dxs/cartographer_detailed_comments_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/dxs/cartographer_detailed_comments_ws/install_isolated
+-G Ninja -DCATKIN_DEVEL_PREFIX=/home/dxs/cartographer_detailed_comments_ws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/dxs/cartographer_detailed_comments_ws/install_isolated

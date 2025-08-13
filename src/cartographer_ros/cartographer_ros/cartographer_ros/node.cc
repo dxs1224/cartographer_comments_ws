@@ -57,7 +57,7 @@
 #include "pcl/point_types.h"
 #include "pcl_conversions/pcl_conversions.h"
 #include <pcl/io/pcd_io.h>
-* todo: INSTRUCTION:
+// * todo: INSTRUCTION:
 //node_main.cc调用 StartTrajectoryWithDefaultTopics()开始轨迹
 //node_main.cc调用 RunFinalOptimization()进行轨迹结束后的全局优化
 

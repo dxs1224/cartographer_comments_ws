@@ -206,5 +206,5 @@
   ],
   "cmake.configureOnOpen": true,
   "editor.inlineSuggest.showToolbar": "onHover",
-  "cmake.sourceDirectory": "/home/dxs/cartographer_comments_ws/src/cartographer"
+  "cmake.sourceDirectory": "/home/dxs/cartographer_detailed_comments_ws/src/cartographer"
 }

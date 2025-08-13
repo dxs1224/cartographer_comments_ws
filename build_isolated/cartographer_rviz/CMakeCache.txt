@@ -305,7 +305,10 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 Ceres_DIR:PATH=/usr/local/lib/cmake/Ceres
 
 //Path to a program.
-DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
+DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
+
+//Doxygen found
+DOXYGEN_FOUND:BOOL=TRUE
 
 //Eigen include directory
 EIGEN_INCLUDE_DIR:STRING=/usr/include/eigen3

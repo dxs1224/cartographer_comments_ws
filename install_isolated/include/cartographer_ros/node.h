@@ -75,10 +75,10 @@ class Node {
   // exist or was already finished.
   bool FinishTrajectory(int trajectory_id);
 
-  // Runs final optimization. All trajectories have to be finished when calling.
+  // Runs final optimization. All trajectories have to be finished when calling.运行最终优化。调用时必须完成所有轨迹。
   void RunFinalOptimization();
 
-  // Starts the first trajectory with the default topics.
+  // Starts the first trajectory with the default topics.使用默认主题开始第一个轨迹。
   void StartTrajectoryWithDefaultTopics(const TrajectoryOptions& options);
 
   // Returns unique SensorIds for multiple input bag files based on
@@ -96,7 +96,7 @@ class Node {
           expected_sensor_ids,
       const TrajectoryOptions& options);
 
-  // The following functions handle adding sensor data to a trajectory.
+  // The following functions handle adding sensor data to a trajectory.以下函数处理将传感器数据添加到轨迹中。
   void HandleOdometryMessage(int trajectory_id, const std::string& sensor_id,
                              const nav_msgs::Odometry::ConstPtr& msg);
   void HandleNavSatFixMessage(int trajectory_id, const std::string& sensor_id,
@@ -118,7 +118,7 @@ class Node {
   void SerializeState(const std::string& filename,
                       const bool include_unfinished_submaps);
 
-  // Loads a serialized SLAM state from a .pbstream file.
+  // Loads a serialized SLAM state from a .pbstream file.从 .pbstream 文件加载序列化的 SLAM 状态。
   void LoadState(const std::string& state_filename, bool load_frozen_state);
 
   ::ros::NodeHandle* node_handle();
@@ -208,18 +208,18 @@ class Node {
   
   // 控制各个传感器数据的采样频率
   struct TrajectorySensorSamplers {
-    TrajectorySensorSamplers(const double rangefinder_sampling_ratio,
+    TrajectorySensorSamplers(const double rangefinder_sampling_ratio, // 分别接收五种采样器频率
                              const double odometry_sampling_ratio,
                              const double fixed_frame_pose_sampling_ratio,
                              const double imu_sampling_ratio,
                              const double landmark_sampling_ratio)
-        : rangefinder_sampler(rangefinder_sampling_ratio),
+        : rangefinder_sampler(rangefinder_sampling_ratio), // 对五种采样器进行初始化
           odometry_sampler(odometry_sampling_ratio),
           fixed_frame_pose_sampler(fixed_frame_pose_sampling_ratio),
           imu_sampler(imu_sampling_ratio),
           landmark_sampler(landmark_sampling_ratio) {}
 
-    ::cartographer::common::FixedRatioSampler rangefinder_sampler;
+    ::cartographer::common::FixedRatioSampler rangefinder_sampler; // 保存了五个采样器
     ::cartographer::common::FixedRatioSampler odometry_sampler;
     ::cartographer::common::FixedRatioSampler fixed_frame_pose_sampler;
     ::cartographer::common::FixedRatioSampler imu_sampler;
@@ -230,7 +230,7 @@ class Node {
   // 相对于std::map, unordered_map的查找和插入的效率高, 时间复杂度为常数级别O(1),而额外空间复杂度则要高出许多
   // 对于需要高效率查询的情况, 使用unordered_map容器, 但是unordered_map对于迭代器遍历效率并不高
 
-  // These are keyed with 'trajectory_id'.
+  // These are keyed with 'trajectory_id'. // C++ 中，键值对通常是通过使用关联容器来表示的。标准库中的 std::map 和 std::unordered_map 是两个常见的关联容器，用于存储键值对。
   std::map<int, ::cartographer::mapping::PoseExtrapolator> extrapolators_;
   std::map<int, ::ros::Time> last_published_tf_stamps_;
   std::unordered_map<int, TrajectorySensorSamplers> sensor_samplers_;

@@ -84,7 +84,7 @@ class SensorBridge {
                          const std::string& frame_id,
                          const ::cartographer::sensor::TimedPointCloud& ranges);
 
-  const int num_subdivisions_per_laser_scan_;
+  const int num_subdivisions_per_laser_scan_; // 雷达被分成几帧数据
   std::map<std::string, cartographer::common::Time>
       sensor_to_previous_subdivision_time_;
   const TfBridge tf_bridge_;

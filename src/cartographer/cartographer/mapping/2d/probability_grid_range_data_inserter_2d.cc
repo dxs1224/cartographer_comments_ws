@@ -95,7 +95,7 @@ void CastRays(const sensor::RangeData& range_data,
   // Now add the misses.
   for (const Eigen::Array2i& end : ends) {
     std::vector<Eigen::Array2i> ray =
-        RayToPixelMask(begin, end, kSubpixelScale);
+        RayToPixelMask(begin, end, kSubpixelScale); // 获取从begin到end射线上的所有栅格坐标
     for (const Eigen::Array2i& cell_index : ray) {
       // 从起点到end点之前, 更新miss点的栅格值
       probability_grid->ApplyLookupTable(cell_index, miss_table);
@@ -103,6 +103,7 @@ void CastRays(const sensor::RangeData& range_data,
   }
 
   // Finally, compute and add empty rays based on misses in the range data.
+  // missing_data_ray_length
   for (const sensor::RangefinderPoint& missing_echo : range_data.misses) {
     std::vector<Eigen::Array2i> ray = RayToPixelMask(
         begin, superscaled_limits.GetCellIndex(missing_echo.position.head<2>()),
@@ -132,7 +133,7 @@ CreateProbabilityGridRangeDataInserterOptions2D(
   return options;
 }
 
-// 写入器的构造, 新建了2个查找表
+// 写入器的构造, 新建了2个查找表(hit_table, miss_table)
 ProbabilityGridRangeDataInserter2D::ProbabilityGridRangeDataInserter2D(
     const proto::ProbabilityGridRangeDataInserterOptions2D& options)
     : options_(options),

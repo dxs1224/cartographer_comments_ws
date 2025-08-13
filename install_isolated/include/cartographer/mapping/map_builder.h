@@ -85,16 +85,16 @@ class MapBuilder : public MapBuilderInterface {
   }
 
  private:
-  const proto::MapBuilderOptions options_;
+  const proto::MapBuilderOptions options_;// 用于记录运行配置，它使用了google的protobuf来处理结构化的数据。 这些配置项是由cartographer_ros在系统运行之初从配置文件中加载的。
   common::ThreadPool thread_pool_; // 线程池
 
-  std::unique_ptr<PoseGraph> pose_graph_;
+  std::unique_ptr<PoseGraph> pose_graph_;// 该对象用于在后台完成闭环检测，进行全局的地图优化。
 
-  std::unique_ptr<sensor::CollatorInterface> sensor_collator_;
+  std::unique_ptr<sensor::CollatorInterface> sensor_collator_;// 用来管理和收集传感器数据的。
   std::vector<std::unique_ptr<mapping::TrajectoryBuilderInterface>>
-      trajectory_builders_;
+      trajectory_builders_;// 用于在前台构建子图。在系统运行的过程中，可能有不止一条轨迹，针对每一条轨迹Cartographer都建立了一个轨迹跟踪器。
   std::vector<proto::TrajectoryBuilderOptionsWithSensorIds>
-      all_trajectory_builder_options_;
+      all_trajectory_builder_options_;// 记录了所有轨迹跟踪器的配置。
 };
 
 // 工厂函数
