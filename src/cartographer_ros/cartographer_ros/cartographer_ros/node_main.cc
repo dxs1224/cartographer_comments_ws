@@ -21,7 +21,7 @@
 #include "cartographer_ros/ros_log_sink.h"
 #include "gflags/gflags.h"
 #include "tf2_ros/transform_listener.h"
- * todo: INSTRUCTION
+// * todo: INSTRUCTION
 //  初始化ROS节点,glog自定义设置;
 //  在Run()中,开始监听tf;通过LoadOptions()读取了配置文件;通过CreateMapBuilder()创建MapBuilder智能指针;
 //  将map_builder和tf传入Node类;
@@ -102,7 +102,7 @@ void Run() {
   ::ros::spin(); // 单线程,以一定频率执行所有回调函数,会有一定的次序
 
   // 结束所有处于活动状态的轨迹Ctrl + C
-  node.FinishAllTrajec  tories();
+  node.FinishAllTrajectories();
 
   // 当所有的轨迹结束时, 再执行一次全局优化
   node.RunFinalOptimization();

@@ -27,7 +27,7 @@ namespace common {
 // Signals when a sample should be taken from a stream of data to select a
 // uniformly distributed fraction of the data.
 // 当应该从数据流中抽取样本以选择数据的均匀分布部分时发出信号
-class FixedRatioSampler {//采样器的具体实现(根据你给定的频率,进行抽样)
+class FixedRatioSampler {
  public:
   explicit FixedRatioSampler(double ratio);
   ~FixedRatioSampler();

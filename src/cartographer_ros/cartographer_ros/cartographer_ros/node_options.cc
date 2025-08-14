@@ -21,7 +21,7 @@
 #include "cartographer/common/configuration_file_resolver.h" // 文件读取解析的头文件
 #include "cartographer/mapping/map_builder_interface.h"
 #include "glog/logging.h"
-* todo: INSTRUCTION
+// * todo: INSTRUCTION
 // node_main.cc调用LoadOptions()加载配置文件中的参数;
 namespace cartographer_ros {
 
