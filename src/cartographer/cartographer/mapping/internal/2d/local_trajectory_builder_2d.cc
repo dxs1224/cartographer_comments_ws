@@ -272,7 +272,8 @@ LocalTrajectoryBuilder2D::AddRangeData(
     return AddAccumulatedRangeData(
         time,
         TransformToGravityAlignedFrameAndFilter(
-            // 将点云变换到local原点处, 且姿态为0
+            // 将点云变换到local原点处, 且姿态为0(点云的变换过程：先将初始时位于tracking坐标系下的点云的坐标转换到local坐标系
+            // 然后再将点云的点转换到local坐标系下)
             gravity_alignment.cast<float>() * range_data_poses.back().inverse(),
             accumulated_range_data_),
         gravity_alignment, sensor_duration);
