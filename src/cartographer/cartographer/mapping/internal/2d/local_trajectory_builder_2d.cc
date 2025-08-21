@@ -93,7 +93,7 @@ std::unique_ptr<transform::Rigid2d> LocalTrajectoryBuilder2D::ScanMatch(
   }
   // 使用active_submaps_的第一个子图进行匹配
   std::shared_ptr<const Submap2D> matching_submap =
-      active_submaps_.submaps().front();
+      active_submaps_.submaps().front(); // active_submaps_ 最多只有两个子图
   // The online correlative scan matcher will refine the initial estimate for
   // the Ceres scan matcher.
   transform::Rigid2d initial_ceres_pose = pose_prediction;
