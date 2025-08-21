@@ -76,9 +76,9 @@ struct Candidate2D {
               const int init_y_index_offset,
               const SearchParameters& search_parameters)
       : scan_index(init_scan_index),
-        x_index_offset(init_x_index_offset),
+        x_index_offset(init_x_index_offset)/*栅格值偏移量*/,
         y_index_offset(init_y_index_offset),
-        x(-y_index_offset * search_parameters.resolution),
+        x(-y_index_offset * search_parameters.resolution)/*实际物理的x偏移量*/,
         y(-x_index_offset * search_parameters.resolution),
         orientation((scan_index - search_parameters.num_angular_perturbations) *
                     search_parameters.angular_perturbation_step_size) {}

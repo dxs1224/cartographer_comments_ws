@@ -175,7 +175,7 @@ double RealTimeCorrelativeScanMatcher2D::Match(
   
   // Step: 7 将计算出的偏差量加上原始位姿获得校正后的位姿
   *pose_estimate = transform::Rigid2d(
-      {initial_pose_estimate.translation().x() + best_candidate.x,
+      {initial_pose_estimate.translation().x()/*预测的x*/ + best_candidate.x/*校正后的x*/,
        initial_pose_estimate.translation().y() + best_candidate.y},
       initial_rotation * Eigen::Rotation2Dd(best_candidate.orientation));
   return best_candidate.score;
@@ -183,7 +183,7 @@ double RealTimeCorrelativeScanMatcher2D::Match(
 
 // 计算所有候选解的加权得分
 void RealTimeCorrelativeScanMatcher2D::ScoreCandidates(
-    const Grid2D& grid, const std::vector<DiscreteScan2D>& discrete_scans,
+    const Grid2D& grid, const std::vector<DiscreteScan2D>& discrete_scans/*点云在栅格地图中的索引*/,
     const SearchParameters& search_parameters,
     std::vector<Candidate2D>* const candidates) const {
   for (Candidate2D& candidate : *candidates) {
@@ -203,10 +203,11 @@ void RealTimeCorrelativeScanMatcher2D::ScoreCandidates(
     }
     // 对得分进行加权
     candidate.score *=
-        std::exp(-common::Pow2(std::hypot(candidate.x, candidate.y) *
-                                   options_.translation_delta_cost_weight() +
-                               std::abs(candidate.orientation) *
-                                   options_.rotation_delta_cost_weight()));
+        std::exp(-common::Pow2/*对综合偏移量取平方（强化大偏移量的惩罚）*/(std::hypot(candidate.x, candidate.y) * // 计算平移的欧氏距离（√(x²+y²)）
+                                   options_.translation_delta_cost_weight() + // 乘以平移权重系数
+                               std::abs(candidate.orientation) * // 计算旋转的绝对角度
+                                   options_.rotation_delta_cost_weight())); // 乘以旋转权重系数
+    // 使结果变为负数（因为指数函数的输入需要负数才能衰减），std::exp(-value)指数衰减函数，输出范围(0,1]，最终得到原始得分乘以一个(0,1]之间的衰减系数
   }
 }
 
