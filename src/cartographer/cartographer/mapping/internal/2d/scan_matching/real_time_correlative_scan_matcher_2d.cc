@@ -140,7 +140,7 @@ double RealTimeCorrelativeScanMatcher2D::Match(
     transform::Rigid2d* pose_estimate) const {
   CHECK(pose_estimate != nullptr);
 
-  // Step: 1 将点云旋转到预测的方向上
+  // Step: 1 将点云旋转到先验位姿预测的方向上
   const Eigen::Rotation2Dd initial_rotation = initial_pose_estimate.rotation();
   const sensor::PointCloud rotated_point_cloud = sensor::TransformPointCloud(
       point_cloud,
@@ -156,7 +156,7 @@ double RealTimeCorrelativeScanMatcher2D::Match(
   const std::vector<sensor::PointCloud> rotated_scans =
       GenerateRotatedScans(rotated_point_cloud, search_parameters);
   
-  // Step: 3 将旋转后的点云集合按照预测出的平移量进行平移, 获取平移后的点在地图中的索引
+  // Step: 3 将旋转后的点云集合按照预测出的平移量进行平移, 没有获取平移后的点云，而是获取平移后的点在地图中的索引
   const std::vector<DiscreteScan2D> discrete_scans = DiscretizeScans(
       grid.limits(), rotated_scans,
       Eigen::Translation2f(initial_pose_estimate.translation().x(),
