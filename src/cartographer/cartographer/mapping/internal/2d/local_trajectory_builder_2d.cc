@@ -109,7 +109,7 @@ std::unique_ptr<transform::Rigid2d> LocalTrajectoryBuilder2D::ScanMatch(
   auto pose_observation = absl::make_unique<transform::Rigid2d>();
   ceres::Solver::Summary summary;
   // 使用ceres进行扫描匹配
-  ceres_scan_matcher_.Match(pose_prediction.translation(), initial_ceres_pose,
+  ceres_scan_matcher_.Match(pose_prediction.translation()/*预测位姿的平移*/, initial_ceres_pose,
                             filtered_gravity_aligned_point_cloud,
                             *matching_submap->grid(), pose_observation.get(),
                             &summary);
@@ -371,7 +371,7 @@ LocalTrajectoryBuilder2D::AddAccumulatedRangeData(
 
   // 返回结果, 最终返回到global_trajectory_builder.cc 
   return absl::make_unique<MatchingResult>(
-      MatchingResult{time, pose_estimate, std::move(range_data_in_local),
+      MatchingResult{time, pose_estimate, std::move(range_data_in_local)/*围绕机器人的点云*/,
                      std::move(insertion_result)});
 }
 
@@ -393,7 +393,7 @@ LocalTrajectoryBuilder2D::InsertIntoSubmap(
     const Eigen::Quaterniond& gravity_alignment) {
   // 如果移动距离过小, 或者时间过短, 不进行地图的更新
   if (motion_filter_.IsSimilar(time, pose_estimate)) {
-    return nullptr;
+    return nullptr; // 不将点云插入地图里
   }
   // 将点云数据写入到submap中
   std::vector<std::shared_ptr<const Submap2D>> insertion_submaps =

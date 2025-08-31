@@ -85,10 +85,10 @@ void CeresScanMatcher2D::Match(const Eigen::Vector2d& target_translation,
   CHECK_GT(options_.occupied_space_weight(), 0.);
   switch (grid.GetGridType()) {
     case GridType::PROBABILITY_GRID:
-      problem.AddResidualBlock(
+      problem.AddResidualBlock( // 添加残差块
           CreateOccupiedSpaceCostFunction2D(
               options_.occupied_space_weight() /
-                  std::sqrt(static_cast<double>(point_cloud.size())),
+                  std::sqrt(static_cast<double>(point_cloud.size())), // ​​权重值除以点云数量平方根，确保权重值会随着点云规模的增加而适当减小
               point_cloud, grid),
           nullptr /* loss function */, ceres_pose_estimate);
       break;
@@ -106,14 +106,14 @@ void CeresScanMatcher2D::Match(const Eigen::Vector2d& target_translation,
   CHECK_GT(options_.translation_weight(), 0.);
   problem.AddResidualBlock(
       TranslationDeltaCostFunctor2D::CreateAutoDiffCostFunction(
-          options_.translation_weight(), target_translation), // 平移的目标值, 没有使用校准后的平移
+          options_.translation_weight(), target_translation), // 平移的目标值, 是一个先验，位姿推测器推测出来的，没有使用暴力匹配校准后的平移
       nullptr /* loss function */, ceres_pose_estimate);      // 平移的初值
 
   // 旋转的残差, 固定了角度不变
   CHECK_GT(options_.rotation_weight(), 0.);
   problem.AddResidualBlock(
       RotationDeltaCostFunctor2D::CreateAutoDiffCostFunction(
-          options_.rotation_weight(), ceres_pose_estimate[2]), // 角度的目标值
+          options_.rotation_weight(), ceres_pose_estimate[2]), // 角度的目标值，如果使用了暴力匹配，这里的角度就是校准后的，如果没有使用暴力匹配，就是位姿推测器推测出的
       nullptr /* loss function */, ceres_pose_estimate);       // 角度的初值
 
   // 根据配置进行求解
