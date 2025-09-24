@@ -40,7 +40,7 @@ class TranslationDeltaCostFunctor2D {
   // 平移量残差的计算, (pose[0] - x_)的平方ceres会自动加上
   template <typename T>
   bool operator()(const T* const pose, T* residual) const {
-    residual[0] = scaling_factor_ * (pose[0] - x_); // 从当前位置向目标位置的逼近 
+    residual[0] = scaling_factor_/*权重*/ * (pose[0] - x_); // 从当前位置向目标位置的逼近 
     residual[1] = scaling_factor_ * (pose[1] - y_);
     return true;
   }
