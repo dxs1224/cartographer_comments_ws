@@ -169,7 +169,7 @@ LaserScanToPointCloudWithIntensities(const LaserMessageType& msg) {
         // 保存点云坐标与时间信息
         point_cloud.points.push_back(point);
         
-        // 如果存在强度信息
+        // 如果存在强度信息 // DXS ADD：既然点云有强度，那是不是可以通过高强度的点的位置信息作为特征点进行匹配？
         if (msg.intensities.size() > 0) {
           CHECK_EQ(msg.intensities.size(), msg.ranges.size());
           // 使用auto可以适应不同的数据类型

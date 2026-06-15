@@ -265,7 +265,7 @@ LocalTrajectoryBuilder2D::AddRangeData(
 
     // TODO(gaschler): This assumes that 'range_data_poses.back()' is at time
     // 'time'.
-    // note: 地图的原点就是这里的origin
+    // note: 地图的原点就是这里的origin，本次 accumulated_range_data 的射线原点是这里的 origin，它是当前这帧点云更新地图时的参考起点，不是 map 坐标系的永远原点
     // 以最后一个点的时间戳估计出的坐标为这帧数据的原点
     accumulated_range_data_.origin = range_data_poses.back().translation();
     
