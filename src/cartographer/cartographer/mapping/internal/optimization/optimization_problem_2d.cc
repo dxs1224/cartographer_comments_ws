@@ -345,14 +345,14 @@ void OptimizationProblem2D::Solve(
   for (const Constraint& constraint : constraints) {
     problem.AddResidualBlock(
         // 根据SPA论文中的公式计算出的残差的CostFunction
-        CreateAutoDiffSpaCostFunction(constraint.pose),
+        CreateAutoDiffSpaCostFunction(constraint.pose), // 已观测到的“节点 j 相对子图 i”的约束
         // Loop closure constraints should have a loss function.
         // 为闭环约束提供一个Huber的核函数,用于降低错误的闭环检测对最终的优化结果带来的负面影响
         constraint.tag == Constraint::INTER_SUBMAP // 核函数
             ? new ceres::HuberLoss(options_.huber_scale()) // param: huber_scale
             : nullptr,
-        C_submaps.at(constraint.submap_id).data(), // 2个优化变量
-        C_nodes.at(constraint.node_id).data());
+        C_submaps.at(constraint.submap_id).data(), // 2个优化变量 子图 i 的 global 位姿
+        C_nodes.at(constraint.node_id).data()); // 节点 j 的 global 位姿
   }
   
   // Add cost functions for landmarks.
